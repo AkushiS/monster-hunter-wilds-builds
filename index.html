@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Builds MHWilds pour joueurs avancé">
+<title>MHWilds Builds</title>
+<link rel="stylesheet" href="CssMHWilds.css"/>
+</head>
+
+<body>
+
+<header>
+<h1>Monster Hunter Wilds Builds</h1>
+</header>
+
+<main>
+<section>
+
+<h2 class="armure">Builds RC 100</h2>
+
+<p class="description-build">
+    Builds endgame RC 100 pour toutes les armes de Monster Hunter Wilds. Chaque build est conçu pour offrir le meilleur équilibre entre dégâts, confort et survie.
+</p>
+
+<div class="guides-container">
+
+<a class="weapon-card Arc" onclick="openModal(event, 'Arc', this)">
+<h3>Arc</h3>
+</a>
+
+<a class="weapon-card Corne-de-chasse" onclick="openModal(event, 'Corne de chasse', this)">
+<h3>Corne de chasse</h3>
+</a>
+
+<a class="weapon-card Double-lames" onclick="openModal(event, 'Double lames', this)">
+<h3>Double lames</h3>
+</a>
+
+<a class="weapon-card Epee-et-bouclier" onclick="openModal(event, 'Epee & bouclier', this)">
+<h3>Épée & bouclier</h3>
+</a>
+
+<a class="weapon-card Epee-longue" onclick="openModal(event, 'Épée longue', this)">
+<h3>Épée longue</h3>
+</a>
+
+<a class="weapon-card Grande-epee" onclick="openModal(event, 'Grande épée', this)">
+<h3>Grande épée</h3>
+</a>
+
+<a class="weapon-card Lance" onclick="openModal(event, 'Lance', this)">
+<h3>Lance</h3>
+</a>
+
+<a class="weapon-card Lance-canon" onclick="openModal(event, 'Lance canon', this)">
+<h3>Lance canon</h3>
+</a>
+
+<a class="weapon-card Fusarbalete-leger" onclick="openModal(event, 'Fusarbalète léger', this)">
+<h3>Fusarbalète léger</h3>
+</a>
+
+<a class="weapon-card Fusarbalete-lourd" onclick="openModal(event, 'Fusarbalète lourd', this)">
+<h3>Fusarbalète lourd</h3>
+</a>
+
+<a class="weapon-card Insectoglaive" onclick="openModal(event, 'Insectoglaive', this)">
+<h3>Insectoglaive</h3>
+</a>
+
+<a class="weapon-card Marteau" onclick="openModal(event, 'Marteau', this)">
+<h3>Marteau</h3>
+</a>
+
+<a class="weapon-card Morpho-hache" onclick="openModal(event, 'Morpho-hache', this)">
+<h3>Morpho-hache</h3>
+</a>
+
+<a class="weapon-card Volto-hache" onclick="openModal(event, 'Volto-hache', this)">
+<h3>Volto-hache</h3>
+</a>
+
+</div>
+</section>
+</main>
+
+<div class="modal" id="modal">
+<div class="modal-content">
+
+<button class="close-btn" onclick="closeModal()">✕</button>
+
+<div id="modal-header"></div>
+<div id="builds-container"></div>
+
+</div>
+</div>
+
+<script>
+
+function openModal(event, weapon, element) {
+
+document.body.style.overflow = "hidden";
+
+const modal = document.getElementById("modal");
+const header = document.getElementById("modal-header");
+const buildsContainer = document.getElementById("builds-container");
+
+header.innerHTML = "";
+buildsContainer.innerHTML = "";
+
+const oldClone = document.querySelector(".clone-card");
+if (oldClone) oldClone.remove();
+
+const rect = element.getBoundingClientRect();
+
+const clone = element.cloneNode(true);
+clone.classList.add("clone-card");
+
+document.body.appendChild(clone);
+
+// position départ
+clone.style.position = "fixed";
+clone.style.left = rect.left + "px";
+clone.style.top = rect.top + "px";
+clone.style.width = rect.width + "px";
+clone.style.height = rect.height + "px";
+clone.style.zIndex = "2000";
+
+clone.style.transformOrigin = "center";
+
+// ouvrir modal
+modal.style.display = "flex";
+
+requestAnimationFrame(() => {
+
+modal.classList.add("show");
+
+const targetX = window.innerWidth / 2 - rect.width / 2;
+const targetY = -30;
+
+clone.style.left = targetX + "px";
+clone.style.top = targetY + "px";
+clone.style.transform = "none";
+
+});
+
+// fin animation → on fixe dans modal
+setTimeout(() => {
+
+header.appendChild(clone);
+
+// IMPORTANT : on garde position FIXED
+clone.style.position = "fixed";
+clone.style.left = (window.innerWidth / 2 - rect.width / 2) + "px";
+clone.style.top = "-30px";
+clone.style.transform = "none";
+clone.style.width = rect.width + "px";
+clone.style.height = rect.height + "px";
+
+let builds = "";
+
+switch (weapon) {
+
+case "Épée longue":
+builds = `
+<div class="build-card">
+    <h3>Build Multi-Monstres</h3>
+    <img src="Images/Multi-Monstres.png">
+    <p> Ceci est un build qui fonctionne sur tous les monstres. Si Mise à mort n'est pas rentable sur certains monstres (ex. : phases 1 et 2 du Gogmazios ou le Gore Magala si vous ne tapez pas sa tête), vous pouvez alors mettre Force latente lv 5 ou Témérité lv 5 + Poussée d'adrénaline lv 1, car les 5 niveaux de Mise à mort sont obtenus via des joyaux.</p>
+    <p> Il en va de même pour Ignifuge lv 3, utile pour atteindre 20 de résistance au feu, ce qui permet de ne pas subir le Fléau-feu. Vous pouvez donc remplacer Ignifuge par d'autres talents de résistance élémentaire afin d'atteindre 20 de résistance dans l'élément souhaité et ainsi éviter le fléau élémentaire correspondant.<br>Attention, pour atteindre 20 de résistance dans certains éléments, vous aurez besoin de la résistance élémentaire obtenue via le repas.</br></p>
+    <p> Contre Seregios, vous pouvez également utiliser le talent Anti-hémorragie.</p>
+    <p> Selon les emplacements de joyaux de votre talisman, vous pouvez ajouter les talents que vous voulez. Sur ce stuff, on peut voir le joyau d'Adaptation pour la chaleur ou le froid, ainsi que le joyau d'Atlantis pour être moins ralenti par l'huile que le Gogmazios répand au sol.</p>
+</div>
+<div class="build-card">
+    <h3> Test build </h3>
+</div>
+`;
+break;
+
+case "Arc":
+builds = `
+<div class="build-card">
+    <h3>Build Dragon</h3>
+</div>
+`;
+break;
+
+case "Grande épée":
+builds = `
+<div class="build-card">
+    <h3>Build Burst</h3>
+    <img src="Images/Triple-Impact.png">
+    <p> Ce build permet d’infliger d’importants dégâts grâce à une attaque et une affinité élevées, ainsi qu’au passif de l’arme « Reflet éparpillé » et au bonus 2 pièces Maléfique. L’arme offre déjà un excellent confort de jeu grâce au talent Concentration intégré et à son très bon tranchant, ce qui permet de se passer de talents comme Samouraï ou Main de maître.</p>
+    <p> L’équipement n’apporte pas de confort supplémentaire particulier, mais si vous êtes à l’aise en survie, vous pouvez remplacer Bénédiction par des talents utilitaires tels que Crâne d’acier ou Anti-hémorragie (notamment contre Seregios), selon les besoins du combat.</p>
+    <p> Concernant le talisman, il est idéal d'avoir deux niveaux de Machine de guerre plutôt qu’un seul afin d’atteindre le niveau 5.</p>
+</div>
+`;
+break;
+
+case "Epee & bouclier":
+builds = `
+<div class="build-card">
+    <h3>Build DPS</h3>
+    <img src="Images/SnS-DPS.png">
+    <p> Ce build offre un excellent équilibre entre dégâts, confort et survie. On peut notamment remarquer la présence de joyaux de niveau 1 placés dans des emplacements de niveau 2. Il serait possible de compléter Performance optimale jusqu'au niveau 5, mais le gain apporté ne me paraît pas suffisamment intéressant.</p>
+    <p> En effet, avec l'Épée et Bouclier, bloquer une attaque peut entraîner une légère perte de points de vie, ce qui désactive Performance optimale. Or, cette perte est parfois trop faible pour justifier l'utilisation d'un soin, ce qui réduit l'efficacité du talent.</p>
+    <p> Il est également possible d'opter pour Vengeance, mais là encore, je trouve que le gain apporté reste relativement faible. J'ai donc préféré investir dans Carnassier, qui permet de récupérer sa vie plus rapidement. Ce talent est particulièrement efficace avec l'Épée et Bouclier, puisqu'il n'est pas nécessaire de rengainer son arme pour utiliser des objets.</p>
+    <p> Il est également envisageable de remplacer Bénédiction, le bouclier de l'arme apportant déjà une certaine sécurité. Toutefois, je considère que le gain offert par Vengeance ne compense pas la survivabilité supplémentaire procurée par Bénédiction.</p>
+</div>
+<div class="build-card">
+    <h3> Build Support </h3>
+    <img src="Images/SnS-Support.png">
+    <p> Voici un build de soutien. Il vous permettra de soigner rapidement et fréquemment vos alliés, tout en leur conférant des bonus d'attaque grâce aux Potions de démon, aux Poudres de démon, etc., ainsi qu'au bonus de groupe « Faveur du seigneur ». Ce dernier accorde 10 points d'attaque supplémentaires à toute l'équipe après l'utilisation d'un soin ou d'un objet de renforcement.</p>
+    <p> Vous remarquerez également la présence de joyaux de niveau 1 placés dans des emplacements de niveau 2. Si vous le souhaitez, vous pouvez sacrifier deux niveaux de Bénédiction afin d'obtenir les deux derniers niveaux de Mycologue extrême. Cela vous permettra notamment de bénéficier des effets du Fléau du diable, qui constitue selon moi le seul véritable intérêt à investir au-delà du niveau 1 de Mycologue extrême.</p>
+    <p> En effet, les champignons accessibles au niveau 2 de Mycologue extrême remplissent le même rôle que les Potions de démon et les Potions de pierre, ces dernières étant plus efficaces que leurs équivalents fongiques.</p>
+</div>
+`;
+break;
+
+default:
+builds = `
+<div class="build-card">
+    <h3>Builds à venir...</h3>
+</div>
+`;
+}
+
+buildsContainer.innerHTML = builds;
+
+}, 600);
+
+}
+
+function closeModal() {
+
+const modal = document.getElementById("modal");
+
+document.body.style.overflow = "auto";
+
+modal.classList.remove("show");
+
+setTimeout(() => {
+
+modal.style.display = "none";
+document.getElementById("modal-header").innerHTML = "";
+document.getElementById("builds-container").innerHTML = "";
+
+const oldClone = document.querySelector(".clone-card");
+if (oldClone) oldClone.remove();
+
+}, 200);
+
+}
+
+document.getElementById("modal").addEventListener("click", function (e) {
+if (e.target === this) {
+closeModal();
+}
+});
+
+</script>
+
+</body>
+</html>
