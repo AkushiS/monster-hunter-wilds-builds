@@ -3,6 +3,7 @@ body {
     background-image: url("Images/MHW Decor.png");
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
 h1 {
