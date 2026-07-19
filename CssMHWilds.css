@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #ffffff;
   background-image: url("Images/MHW Decor.png");
@@ -458,3 +459,356 @@ h2 {
 .italic {
   font-style: italic;
 }
+=======
+body {
+    background-color: #ffffff;
+    background-image: url("Images/MHW Decor.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 6rem;
+    text-align: center;
+    color: #a57f04;
+
+    text-shadow:
+        /* contour noir */
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+
+        /* relief */
+        0px 0px 16px#000000,
+
+        /* ombre portée */
+         5px 5px 8px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.armure {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    font-weight: bold;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Relief 3D */
+    text-shadow:
+    1px 1px 0 #777,
+    2px 2px 0 #666,
+    3px 3px 0 #555,
+    0 0 8px rgba(255, 255, 255, 0.6),
+    5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.guides-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.weapon-card{
+    position: relative;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    text-decoration: none;
+    color: white;
+
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: transform .3s;
+}
+
+.weapon-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.weapon-card h3{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+
+    text-align: center;
+    font-size: 1.8rem;
+
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
+}
+
+.Arc{
+    background-image: url("Images/Logo\ Arc.png")
+}
+
+.Grande-epee{
+    background-image: url("Images/Logo\ GS.png");
+}
+
+.Double-lames{
+    background-image: url("Images/Logo\ DB.png");
+}
+
+.Marteau{
+    background-image: url("Images/Logo\ Marteau.png");
+}
+
+.Corne-de-chasse{
+    background-image: url("Images/Logo\ Corne\ de\ chasse.png");
+}
+
+.Epee-et-bouclier{
+    background-image: url("Images/Logo\ SNS.png");
+}
+
+.Epee-longue{
+    background-image: url("Images/Logo\ LS.png");
+}
+
+.Lance{
+    background-image: url("Images/Logo\ Lance.png");
+}
+
+.Lance-canon{
+    background-image: url("Images/Logo\ Lance\ Canon.png");
+}
+
+.Fusarbalete-leger{
+    background-image: url("Images/Logo\ LBG.png");
+}
+
+.Fusarbalete-lourd{
+    background-image: url("Images/Logo\ HBG.png");
+}
+
+.Insectoglaive{
+    background-image: url("Images/Logo\ IG.png");
+}
+
+.Morpho-hache{
+    background-image: url("Images/Logo\ Morpho.png");
+}
+
+.Volto-hache{
+    background-image: url("Images/Logo\ Volto.png");
+}
+
+/* Fond assombri */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 250px;
+
+    background: rgba(0,0,0,0.75);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+
+    z-index: 1000;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Fenêtre */
+.modal-content{
+    position: relative;
+
+    width: 1600px;
+
+    max-width: 98vw;
+    height: auto;
+    max-height: min(670px, 85vh);
+
+    background: #202020;
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+
+    overflow-y: auto;
+}
+
+/* Bouton X */
+.close-btn{
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    border: none;
+    background: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+/* Nom de l'arme */
+#weapon-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clone-card {
+    position: fixed;
+    z-index: 2000;
+    transition: all 0.6s ease;
+    pointer-events: none;
+
+    transform-origin: center;
+    will-change: transform, left, top;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+
+    width: 320px !important;
+    height: 320px !important;
+    background-size: 70% !important;
+}
+
+/* Conteneur de la carte d'arme */
+#modal-header{
+    display: block;
+    text-align: center;
+}
+
+/* Carte d'arme dans la modale */
+#modal-header .weapon-card{
+
+    width: auto;
+    height: auto;
+
+    display: inline-block;
+
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: visible;
+}
+
+/* Cache le texte de la carte */
+#modal-header .weapon-card h3{
+    display: none;
+}
+
+.build-card{
+    background: transparent;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.build-card h3{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.build-card img{
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.build-card img:hover{
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.2),
+        0 0 50px rgba(0,0,0,0.6);
+}
+
+.build-card p{
+    font-size: 1.3em;
+}
+
+.description-build {
+    font-size: 1.5em;
+    color: #da7236;
+    text-align: center;
+    max-width: 850px;
+    margin: 20px auto 35px;
+    line-height: 1.5;
+    text-shadow:
+        1px 1px 2px rgba(0,0,0,0.8),
+        0 0 5px rgba(255,255,255,0.3);
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.site-footer {
+  margin-top: 60px;
+  padding: 25px;
+  text-align: center;
+  color: #e6e6e6;
+
+  /* Effet verre */
+  background: rgba(20, 20, 20, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-family: Arial, sans-serif;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.site-footer .small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.italic {
+  font-style: italic;
+}
+>>>>>>> f1e4074da096a6a5d3980a0e34207bb54545a0cb
