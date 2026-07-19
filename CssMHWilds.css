@@ -37,6 +37,7 @@ nav a {
   display: block;
   text-decoration: none;
   color: #d4af37;
+  cursor: pointer;
 
   padding: 20px 0px;
   font-size: 20px;
