@@ -73,7 +73,7 @@ nav a {
     0 0 40px rgba(255, 65, 81, 1);
 }
 
-.wilds-title:hover span {
+.wilds-title:hover {
   background: linear-gradient(to bottom, #f5d8a7 0%, #c66423 60%, #bb541e 100%);
 
   background-clip: text;
