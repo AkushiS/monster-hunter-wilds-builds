@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Builds MHWilds pour joueurs avancé">
-    <title>MHWilds Builds</title>
+    <title>Bienvenue chasseur !</title>
     <link rel="stylesheet" href="CssMHWilds.css">
     <link rel="icon" type="Images/png" href="Images/Icon-Rathalos.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,459 +14,54 @@
       rel="stylesheet">
   </head>
 
-  <body>
+  <body class="accueil">
     <nav>
-      <a href="#">
+      <a href="#" id="logo-nav">
         <img src="Images/Icon-Rathalos.png" alt="Icone Rathalos">
       </a>
       <ul>
         <li>
-          <a class="wilds-title">
-            Monster Hunter<br>
-            Wilds</a
-          >
+          <a href="wilds.html" class="wilds-title">Monster Hunter<br>Wilds</a>
         </li>
         <li>
-          <a class="ascendance-title"
-            >Monster Hunter Wilds : <br>Ascendance</a
-          >
+          <a href="ascendance.html" class="ascendance-title">
+            <span class="ascendance-line">Monster Hunter Wilds :</span>
+            <br>
+            <span class="ascendance-line">
+              Ascendance
+            </span>
+          </a>
         </li>
       </ul>
     </nav>
 
     <header>
-      <h1>Monster Hunter Wilds Builds</h1>
+        <div class="titre-fond">
+            <h1 class="accueil-h1">Bienvenue Chasseurs !</h1>
+        </div>
     </header>
 
     <main>
-      <section>
-        <h2 class="armure">Builds RC 100</h2>
+        <section>
+            <p class="info">Retrouvez des builds dédié aux chasseurs souhaitant optimiser leur équipement. Ces builds sont pensés pour le contenu endgame, avec un équilibre entre dégâts, confort et survie.</p>
+        </section>
 
-        <p class="description-build">
-          Builds endgame RC 100 pour toutes les armes de Monster Hunter Wilds.
-          Chaque build est conçu pour offrir le meilleur équilibre entre dégâts,
-          confort et survie.
-        </p>
+        <section class="last">
+            <h3 class="last-news">Dernières nouveautés</h3>
 
-        <div class="guides-container">
-          <a class="weapon-card Arc" onclick="openModal(event, 'Arc', this)">
-            <h3>Arc</h3>
-          </a>
+            <iframe 
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/heSRpk4mHhc?si=VEhnSsAQaR0bPd9Z"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        </section>
 
-          <a
-            class="weapon-card Corne-de-chasse"
-            onclick="openModal(event, 'Corne de chasse', this)"
-          >
-            <h3>Corne de chasse</h3>
-          </a>
-
-          <a
-            class="weapon-card Double-lames"
-            onclick="openModal(event, 'Double lames', this)"
-          >
-            <h3>Double lames</h3>
-          </a>
-
-          <a
-            class="weapon-card Epee-et-bouclier"
-            onclick="openModal(event, 'Epee & bouclier', this)"
-          >
-            <h3>Épée & bouclier</h3>
-          </a>
-
-          <a
-            class="weapon-card Epee-longue"
-            onclick="openModal(event, 'Épée longue', this)"
-          >
-            <h3>Épée longue</h3>
-          </a>
-
-          <a
-            class="weapon-card Grande-epee"
-            onclick="openModal(event, 'Grande épée', this)"
-          >
-            <h3>Grande épée</h3>
-          </a>
-
-          <a
-            class="weapon-card Lance"
-            onclick="openModal(event, 'Lance', this)"
-          >
-            <h3>Lance</h3>
-          </a>
-
-          <a
-            class="weapon-card Lance-canon"
-            onclick="openModal(event, 'Lance canon', this)"
-          >
-            <h3>Lance canon</h3>
-          </a>
-
-          <a
-            class="weapon-card Fusarbalete-leger"
-            onclick="openModal(event, 'Fusarbalète léger', this)"
-          >
-            <h3>Fusarbalète léger</h3>
-          </a>
-
-          <a
-            class="weapon-card Fusarbalete-lourd"
-            onclick="openModal(event, 'Fusarbalète lourd', this)"
-          >
-            <h3>Fusarbalète lourd</h3>
-          </a>
-
-          <a
-            class="weapon-card Insectoglaive"
-            onclick="openModal(event, 'Insectoglaive', this)"
-          >
-            <h3>Insectoglaive</h3>
-          </a>
-
-          <a
-            class="weapon-card Marteau"
-            onclick="openModal(event, 'Marteau', this)"
-          >
-            <h3>Marteau</h3>
-          </a>
-
-          <a
-            class="weapon-card Morpho-hache"
-            onclick="openModal(event, 'Morpho-hache', this)"
-          >
-            <h3>Morpho-hache</h3>
-          </a>
-
-          <a
-            class="weapon-card Volto-hache"
-            onclick="openModal(event, 'Volto-hache', this)"
-          >
-            <h3>Volto-hache</h3>
-          </a>
-        </div>
-      </section>
     </main>
-
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <button class="close-btn" onclick="closeModal()">✕</button>
-
-        <div id="modal-header"></div>
-        <div id="builds-container"></div>
-      </div>
-    </div>
-
-    <script>
-      function openModal(event, weapon, element) {
-        document.body.style.overflow = "hidden";
-
-        const modal = document.getElementById("modal");
-        const header = document.getElementById("modal-header");
-        const buildsContainer = document.getElementById("builds-container");
-
-        header.innerHTML = "";
-        buildsContainer.innerHTML = "";
-
-        const oldClone = document.querySelector(".clone-card");
-        if (oldClone) oldClone.remove();
-
-        const rect = element.getBoundingClientRect();
-
-        const clone = element.cloneNode(true);
-        clone.classList.add("clone-card");
-
-        document.body.appendChild(clone);
-
-        // position départ
-        clone.style.position = "fixed";
-        clone.style.left = rect.left + "px";
-        clone.style.top = rect.top + "px";
-        clone.style.width = rect.width + "px";
-        clone.style.height = rect.height + "px";
-        clone.style.zIndex = "2000";
-
-        clone.style.transformOrigin = "center";
-
-        // ouvrir modal
-        modal.style.display = "flex";
-
-        requestAnimationFrame(() => {
-          modal.classList.add("show");
-
-          const targetX = window.innerWidth / 2 - rect.width / 2;
-          const targetY = -30;
-
-          clone.style.left = targetX + "px";
-          clone.style.top = targetY + "px";
-          clone.style.transform = "none";
-        });
-
-        // fin animation → on fixe dans modal
-        setTimeout(() => {
-          header.appendChild(clone);
-
-          // IMPORTANT : on garde position FIXED
-          clone.style.position = "fixed";
-          clone.style.left = "50%";
-          clone.style.top = "-30px";
-          clone.style.transform = "translateX(-50%)";
-          clone.style.width = rect.width + "px";
-          clone.style.height = rect.height + "px";
-
-          let builds = "";
-
-          switch (weapon) {
-            case "Arc":
-              builds = `
-<div class="build-card">
-    <h3>Build Elementaire No Crit</h3>
-    <a href="Images/Arc-ElemNoCrit.png" target="_blank">
-        <img src="Images/Arc-ElemNoCrit.png" alt="Build Élémentaire No Crit">
-    </a>
-    <p> Voici un build Arc qui peut évoluer selon vos préférences. Hormis face à l’Arkveld, il n’est pas inférieur au build critique en termes de dégâts. Étant un build basé sur l’élément, il faut noter que l’Arkveld est un monstre possédant peu de faiblesses élémentaires, voire une immunité sur ses ailes. De plus, il peut infliger le Fléau-dragons, ce qui empêche d’infliger des dégâts élémentaires.</p>
-    <p> En revanche, contre les autres monstres, vous bénéficierez à la fois du DPS, du confort et de la survie souhaités. Grâce aux nombreux emplacements de joyaux de niveau 1 et 2, vous pouvez adapter votre build en privilégiant davantage de niveaux d’Athlète ou de Métabolisme.</p>
-    <p> Pour ce faire, il est possible de sacrifier Bénédiction si vous êtes à l’aise avec les esquives, ainsi que quelques niveaux d’Union ou de Performance optimale.</p>
-</div>
-`;
-              break;
-
-            case "Corne de chasse":
-              builds = `
-<div class="build-card">
-    <h3>Build Corne de chasse DPS</h3>
-    <a href="Images/HH-DPS.png" target="_blank">
-        <img src="Images/HH-DPS.png" alt="Build Corne de chasse DPS">
-    </a>
-    <p> Un build Corne de chasse DPS. Et oui, même si la Corne de chasse permet de booster et d’apporter différents types de soutien à l’équipe, c’est également une arme extrêmement forte en DPS, mais sans doute l’une des plus complexes à maîtriser.</p>
-    <p> Ce build vous permet d’infliger un maximum de dégâts tout en disposant de nombreux emplacements de joyaux pour adapter vos talents selon le monstre affronté.</p>
-    <p> On peut également remarquer que la Corne de chasse utilisée ici n’a pas d’élément. Le choix d’une Corne de chasse Artian Gogmazios non élémentaire modifie les mélodies par rapport à une version élémentaire. Toutefois, les deux options restent viables : il n’y a pas de différence significative de dégâts entre une version élémentaire et non élémentaire. La principale variation concerne les musiques, que vous choisirez donc selon vos préférences de jeu.</p>
-</div>
-`;
-              break;
-
-            case "Double lames":
-              builds = `
-<div class="build-card">
-    <h3>Build Elementaire No Crit</h3>
-    <a href="Images/DB-ElemNoCrit.png" target="_blank">
-        <img src="Images/DB-ElemNoCrit.png" alt="Build Elementaire No Crit">
-    </a>
-    <p> Voici un build Double Lames qui peut évoluer selon vos préférences. Hormis face à l’Arkveld classique, il n’est pas inférieur au build critique en termes de dégâts. En effet, les chaînes de l’Arkveld classique sont immunisées aux dégâts élémentaires, ce qui réduit fortement l’efficacité des builds élémentaires.</p>
-    <p> À l’inverse, ce build reste tout à fait efficace contre l’Arkveld Alpha Suprême, dont les chaînes ne sont pas immunisées aux dégâts élémentaires. Il conserve ainsi une grande partie de son potentiel offensif.</p>
-    <p> Face aux autres monstres, vous bénéficierez d’un excellent DPS, d’un bon confort de jeu et d’une bonne survie. Grâce aux nombreux emplacements de joyaux de niveau 1 et 2, vous pouvez adapter le build à votre style de jeu en privilégiant davantage de niveaux d’Athlète, de Marathonien ou encore de Métabolisme.</p>
-    <p> Pour cela, vous pouvez sacrifier Bénédiction et Contre-attaque si vous êtes à l’aise avec les esquives, ou simplement si vous souhaitez privilégier le confort au détriment d’une partie du DPS.</p>
-</div>
-`;
-              break;
-
-            case "Epee & bouclier":
-              builds = `
-<div class="build-card">
-    <h3>Build SnS DPS</h3>
-    <a href="Images/SnS-DPS.png" target="_blank">
-        <img src="Images/SnS-DPS.png" alt="Build SnS DPS">
-    </a>
-    <p> Ce build offre un excellent équilibre entre dégâts, confort et survie. On peut notamment remarquer la présence de joyaux de niveau 1 placés dans des emplacements de niveau 2. Il serait possible de compléter Performance optimale jusqu'au niveau 5, mais le gain apporté ne me paraît pas suffisamment intéressant.</p>
-    <p> En effet, avec l'Épée et Bouclier, bloquer une attaque peut entraîner une légère perte de points de vie, ce qui désactive Performance optimale. Or, cette perte est parfois trop faible pour justifier l'utilisation d'un soin, ce qui réduit l'efficacité du talent.</p>
-    <p> Il est également possible d'opter pour Vengeance, mais là encore, je trouve que le gain apporté reste relativement faible. J'ai donc préféré investir dans Carnassier, qui permet de récupérer sa vie plus rapidement. Ce talent est particulièrement efficace avec l'Épée et Bouclier, puisqu'il n'est pas nécessaire de rengainer son arme pour utiliser des objets.</p>
-    <p> Il est également envisageable de remplacer Bénédiction, le bouclier de l'arme apportant déjà une certaine sécurité. Toutefois, je considère que le gain offert par Vengeance ne compense pas la survivabilité supplémentaire procurée par Bénédiction.</p>
-</div>
-<div class="build-card">
-    <h3> Build Support </h3>
-    <a href="Images/SnS-Support.png" target="_blank">
-        <img src="Images/SnS-Support.png" alt="Build Support">
-    </a>
-    <p> Voici un build de soutien. Il vous permettra de soigner rapidement et fréquemment vos alliés, tout en leur conférant des bonus d'attaque grâce aux Potions de démon, aux Poudres de démon, etc., ainsi qu'au bonus de groupe « Faveur du seigneur ». Ce dernier accorde 10 points d'attaque supplémentaires à toute l'équipe après l'utilisation d'un soin ou d'un objet de renforcement.</p>
-    <p> Vous remarquerez également la présence de joyaux de niveau 1 placés dans des emplacements de niveau 2. Si vous le souhaitez, vous pouvez sacrifier deux niveaux de Bénédiction afin d'obtenir les deux derniers niveaux de Mycologue extrême. Cela vous permettra notamment de bénéficier des effets du Fléau du diable, qui constitue selon moi le seul véritable intérêt à investir au-delà du niveau 1 de Mycologue extrême.</p>
-    <p> En effet, les champignons accessibles au niveau 2 de Mycologue extrême remplissent le même rôle que les Potions de démon et les Potions de pierre, ces dernières étant plus efficaces que leurs équivalents fongiques.</p>
-</div>
-`;
-              break;
-
-            case "Épée longue":
-              builds = `
-<div class="build-card">
-    <h3>Build Multi-Monstres</h3>
-    <a href="Images/Multi-Monstres.png" target="_blank">
-        <img src="Images/Multi-Monstres.png" alt="Build Multi-Monstres">
-    </a>
-    <p> Ceci est un build qui fonctionne sur tous les monstres. Si Mise à mort n'est pas rentable sur certains monstres (ex. : phases 1 et 2 du Gogmazios ou le Gore Magala si vous ne tapez pas sa tête), vous pouvez alors mettre Force latente lv 5 ou Témérité lv 5 + Poussée d'adrénaline lv 1, car les 5 niveaux de Mise à mort sont obtenus via des joyaux.</p>
-    <p> Il en va de même pour Ignifuge lv 3, utile pour atteindre 20 de résistance au feu, ce qui permet de ne pas subir le Fléau-feu. Vous pouvez donc remplacer Ignifuge par d'autres talents de résistance élémentaire afin d'atteindre 20 de résistance dans l'élément souhaité et ainsi éviter le fléau élémentaire correspondant.<br>Attention, pour atteindre 20 de résistance dans certains éléments, vous aurez besoin de la résistance élémentaire obtenue via le repas.</br></p>
-    <p> Contre Seregios, vous pouvez également utiliser le talent Anti-hémorragie.</p>
-    <p> Selon les emplacements de joyaux de votre talisman, vous pouvez ajouter les talents que vous voulez. Sur ce stuff, on peut voir le joyau d'Adaptation pour la chaleur ou le froid, ainsi que le joyau d'Atlantis pour être moins ralenti par l'huile que le Gogmazios répand au sol.</p>
-</div>
-<div class="build-card">
-    <h3> Test build </h3>
-</div>
-`;
-              break;
-
-            case "Grande épée":
-              builds = `
-<div class="build-card">
-    <h3>Build Triple Impact</h3>
-    <a href="Images/Triple-Impact.png" target="_blank">
-        <img src="Images/Triple-Impact.png" alt="Build Triple Impact">
-    </a>
-    <p> Ce build permet d’infliger d’importants dégâts grâce à une attaque et une affinité élevées, ainsi qu’au passif de l’arme « Reflet éparpillé » et au bonus 2 pièces Maléfique. L’arme offre déjà un excellent confort de jeu grâce au talent Concentration intégré et à son très bon tranchant, ce qui permet de se passer de talents comme Samouraï ou Main de maître.</p>
-    <p> L’équipement n’apporte pas de confort supplémentaire particulier, mais si vous êtes à l’aise en survie, vous pouvez remplacer Bénédiction par des talents utilitaires tels que Crâne d’acier ou Anti-hémorragie (notamment contre Seregios), selon les besoins du combat.</p>
-    <p> Concernant le talisman, il est idéal d'avoir deux niveaux de Machine de guerre plutôt qu’un seul afin d’atteindre le niveau 5.</p>
-</div>
-`;
-              break;
-
-            case "Lance":
-              builds = `
-<div class="build-card">
-    <h3>Builds Lance DPS</h3>
-    <a href="Images/Lance-DPS.png" target="_blank">
-        <img src="Images/Lance-DPS.png" alt="Build Lance DPS">
-    </a>
-    <p> Ce build Lance vous permet d’allier de bons dégâts tout en conservant un excellent confort et une bonne survie. Grâce aux bonus 2 pièces Arkvulcan, vous bénéficiez d’une légère régénération de vie lors de vos attaques, sans oublier le bonus de groupe « Âme du seigneur », qui peut vous permettre de survivre à 1 point de vie, ainsi que Bénédiction niveau 3.</p>
-    <p> En termes de confort, le bonus 2 pièces Anjanath vous permet d’activer plus fréquemment Corps et âme. J’ai également opté pour 2 niveaux de Trompe-la-mort, tout comme dans le build Lance canon DPS, ce qui améliore votre mobilité lorsque vous êtes dégainé.</p>
-    <p> Concernant le talisman, comme vous pouvez le voir, il s’agit d’un talisman offrant directement les 3 niveaux d’Ultra-garde, ce qui ne correspond pas forcément à un build dit « DPS ». Les talents recherchés sur le talisman restent donc flexibles. L’objectif est surtout d’obtenir au moins le niveau de Mise à mort permettant d’atteindre le niveau 5.</p>
-    <p> Pour les monstres contre lesquels Ultra-garde n’est pas nécessaire, vous pouvez privilégier des niveaux de Machine de guerre, par exemple.</p>
-</div>
-`;
-              break;
-
-            case "Lance canon":
-              builds = `
-<div class="build-card">
-    <h3>Builds Lance canon DPS</h3>
-    <a href="Images/LanceCanon-DPS.png" target="_blank">
-        <img src="Images/LanceCanon-DPS.png" alt="Build Lance canon DPS">
-    </a>
-    <p> Voici un build Lance canon DPS. Étant une arme lente lors des déplacements, tout comme dans le build Lance DPS, j’ai opté pour 2 niveaux de Trompe-la-mort afin d’améliorer la mobilité lorsque vous êtes dégainé.</p>
-    <p> Vous disposez également de 2 niveaux de Bouchon d’oreilles. Cependant, si vous recherchez un maximum de DPS, même si certaines attaques de la Lance canon ne peuvent pas infliger de coups critiques, vous pouvez remplacer Bouchon d’oreilles et/ou Trompe-la-mort par des talents comme Corps et âme ou d’autres talents selon vos préférences.</p>  
-</div>
-`;
-              break;
-
-            case "Fusarbalète léger":
-              builds = `
-<div class="build-card">
-    <h3>Builds DPS Elementaire</h3>
-    <a href="Images/LBG-ElemCrit.png" target="_blank">
-        <img src="Images/LBG-ElemCrit.png" alt="Build DPS Elementaire">
-    </a>
-    <p> Ce build LBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.</p>
-    <p> Ce build inclut également quelques talents de confort, comme Bouchon d’oreilles, qui peut être remplacé si vous le souhaitez afin de compléter le niveau 5 de Performance optimale et ainsi augmenter encore davantage vos dégâts.</p>
-    <p> Concernant le talisman, le plus important est d’obtenir Antivirus pour les 10 % d’affinité qu’il procure. Cependant, vous pouvez choisir d’autres options selon vos préférences, le choix des talents sur le talisman restant entièrement flexible.</p>
-    <p class="italic"> Le build Fusarbalète léger DPS élémentaire est identique au build Fusarbalète lourd DPS élémentaire.</p> 
-</div>
-`;
-              break;
-
-            case "Fusarbalète lourd":
-              builds = `
-<div class="build-card">
-    <h3>Builds DPS Elementaire</h3>
-    <a href="Images/HBG-ElemCrit.png" target="_blank">
-        <img src="Images/HBG-ElemCrit.png" alt="Build DPS Elementaire">
-    </a>
-    <p> Ce build HBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.</p>
-    <p> Ce build inclut également quelques talents de confort, comme Bouchon d’oreilles, qui peut être remplacé si vous le souhaitez afin de compléter le niveau 5 de Performance optimale et ainsi augmenter encore davantage vos dégâts.</p>
-    <p> Concernant le talisman, le plus important est d’obtenir Antivirus pour les 10 % d’affinité qu’il procure. Cependant, vous pouvez choisir d’autres options selon vos préférences, le choix des talents sur le talisman restant entièrement flexible.</p>
-    <p class="italic"> Le build Fusarbalète lourd DPS élémentaire est identique au build Fusarbalète léger DPS élémentaire.</p> 
-</div>
-`;
-              break;
-
-            case "Insectoglaive":
-              builds = `
-<div class="build-card">
-    <h3>Builds Insectoglaive DPS</h3>
-    <a href="Images/IG-DPS.png" target="_blank">
-        <img src="Images/IG-DPS.png" alt="Build Insectoglaive DPS">
-    </a>
-    <p> Voici un build Insectoglaive DPS. Ce build vous apporte d’importants dégâts tout en conservant un bon niveau de confort.</p>
-    <p> Vous disposez de Bouchon d’oreilles ainsi que de résistances élémentaires pouvant atteindre 20 minimum, grâce au repas, mais surtout aux trois emplacements supplémentaires de niveau 1. Ceux-ci vous permettent d’ajouter des talents tels qu’Ignifuge, Étanchéité, Aura draconique, etc., afin d’éviter de subir des fléaux élémentaires.</p>
-    <p> Contre certains monstres, comme le Seregios, vous pouvez remplacer ces résistances élémentaires par le talent Anti-hémorragie.</p>
-</div>
-`;
-              break;
-
-            case "Marteau":
-              builds = `
-<div class="build-card">
-    <h3>Builds Marteau DPS</h3>
-    <a href="Images/Marteau-DPS.png" target="_blank">
-        <img src="Images/Marteau-DPS.png" alt="Build Marteau DPS">
-    </a>
-    <p> Ce build Marteau est très complet : vous n’aurez pas besoin de changer vos talents selon le monstre affronté.</p>
-    <p> En effet, au lieu de devoir utiliser des talents comme Ignifuge ou Étanchéité, vous disposez directement des 3 niveaux du talent Totem élémentaire, ce qui vous confère une immunité aux fléaux élémentaires.</p>
-    <p> Ce build vous octroie également d’importants dégâts. Même s’il vous manque un niveau de Témérité, vous disposez de tout ce qu’il faut en termes de talents offensifs, ainsi que d’un bonus supplémentaire grâce au talent Conversion élémentaire niveau 3, qui ajoute parfois environ 300 de dégâts. De plus, lorsque vous utilisez un marteau élémentaire dragon, ce talent peut également augmenter les dégâts de cet élément.</p>
-    <p> Concernant le talisman, si vous avez la possibilité d’obtenir 2 niveaux ou plus de Machine de guerre, cela sera plus optimal afin d’atteindre le niveau 5 de Machine de guerre.</p>
-</div>
-`;
-              break;
-
-            case "Morpho-hache":
-              builds = `
-<div class="build-card">
-    <h3>Builds Morpho DPS</h3>
-    <a href="Images/Morpho-DPS.png" target="_blank">
-        <img src="Images/Morpho-DPS.png" alt="Build Morpho DPS">
-    </a>
-    <p> Un build Morpho-hache qui fonctionne aussi bien avec une Morpho-hache à fiole élémentaire qu’avec une fiole de choc. Il s’agit d’un build combinant une forte attaque, un bon apport élémentaire et une affinité pouvant atteindre les 100 %.</p>
-    <p> On peut y observer le talent Union. Dans le cas où vous jouez une Morpho-hache sans élément ou basée sur l’affliction, vous pouvez retirer ce talent, qui devient alors obsolète, et le remplacer par des talents tels que Bouchon d’oreille, Destructeur ou encore Expert en survie, afin d’utiliser plus fréquemment votre cape. Il est également possible, selon les situations, d’augmenter votre attaque grâce à des talents comme Vengeance ou Performance optimale.</p>
-    <p> PS : vous pouvez obtenir davantage de tranchant si vous disposez de Tranchant EX dans les bonus de renforcement de l’arme.</p>
-</div>
-`;
-              break;
-
-            case "Volto-hache":
-              builds = `
-<div class="build-card">
-    <h3>Builds Volto-hache SAED</h3>
-    <a href="Images/Volto-SAED.png" target="_blank">
-        <img src="Images/Volto-SAED.png" alt="Build Volto-hache SAED">
-    </a>
-    <p> Voici le build SAED. Ce build vous permet d’atteindre le maximum d’élément possible, voire de le dépasser légèrement.</p>
-    <p> Pourquoi dépasser le maximum ? En réalité, il n’y a aucun intérêt à dépasser la limite d’élément en permanence, mais tous les talents ne sont pas actifs en même temps. Par exemple, si le monstre n’est pas énervé, vous ne bénéficierez pas du bonus d’élément obtenu via le bonus 4 pièces Gogmapocalypse. Dans ces situations, ce build vous permet de vous rapprocher du maximum lorsque Conversion élémentaire et Absorption élémentaire sont activés.</p>
-    <p> À l’inverse, si ces deux talents ne sont pas actifs lorsque le monstre est énervé, vous bénéficierez du bonus Gogmapocalypse, ce qui vous permettra d’atteindre le maximum d’élément. Et si tous les bonus sont actifs en même temps et que vous dépassez largement ce maximum, le talent Conversion élémentaire reste intéressant grâce à son effet de proc infligeant environ 300 dégâts occasionnels.</p>
-    <p> Concernant le talisman, si vous souhaitez obtenir une immunité au fléau élémentaire, vous devrez impérativement y avoir deux niveaux de Totem élémentaire, car ce talent n’existe pas en joyaux.</p>   
-</div>
-`;
-              break;
-
-            default:
-              builds = `
-<div class="build-card">
-    <h3>Build à venir ..</h3>
-</div>
-`;
-              break;
-          }
-
-          buildsContainer.innerHTML = builds;
-        }, 600);
-      }
-
-      function closeModal() {
-        const modal = document.getElementById("modal");
-
-        document.body.style.overflow = "auto";
-
-        modal.classList.remove("show");
-
-        setTimeout(() => {
-          modal.style.display = "none";
-          document.getElementById("modal-header").innerHTML = "";
-          document.getElementById("builds-container").innerHTML = "";
-
-          const oldClone = document.querySelector(".clone-card");
-          if (oldClone) oldClone.remove();
-        }, 200);
-      }
-
-      document.getElementById("modal").addEventListener("click", function (e) {
-        if (e.target === this) {
-          closeModal();
-        }
-      });
-    </script>
 
     <footer class="site-footer">
       <div class="footer-content">
