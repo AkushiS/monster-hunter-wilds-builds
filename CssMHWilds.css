@@ -294,8 +294,9 @@ section iframe {
 }
 
 section.last {
-  margin: 80px 50px 0px 50px;
+  margin: 80px auto;
   height: 450px;
+  width: 1750px;
 
   background-image: url("Images/planche.png");
   background-size: cover;
