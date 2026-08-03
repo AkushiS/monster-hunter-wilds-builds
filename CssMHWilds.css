@@ -693,56 +693,8 @@ p.info {
   }
   */
 
-  body {
-    background-attachment: scroll;
-  }
-
-  body.accueil {
-    background: none;
-  }
-
   body.accueil::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-
-    background-image: url("Images/Accueil_fond1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  body.wilds {
-    background: none;
-  }
-
-  body.wilds::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-
-    background-image: url("Images/MHW Decor.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  body.ascendance {
-    background: none;
-  }
-
-  body.ascendance::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-
-    background-image: url("Images/Ascendance_fond.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   section.last {
