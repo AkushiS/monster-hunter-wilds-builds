@@ -694,7 +694,7 @@ p.info {
   */
 
   body {
-    background-attachment: none;
+    background-attachment: scroll;
   }
 
   body.accueil {
