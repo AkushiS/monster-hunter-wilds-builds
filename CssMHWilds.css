@@ -106,35 +106,72 @@ nav > a {
     inset 0 0 15px #ffb347;
 }
 
-.accueil-title:hover {
-  background: linear-gradient(
-    to bottom,
-    rgba(127, 221, 245, 1) 0%,
-    rgba(45, 106, 79, 1) 45%,
-    rgba(233, 196, 106, 1) 75%
-  );
+@media (hover: hover) {
+  .accueil-title:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba(127, 221, 245, 1) 0%,
+      rgba(45, 106, 79, 1) 45%,
+      rgba(233, 196, 106, 1) 75%
+    );
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-  text-shadow:
-    0 -6px 8px rgba(127, 221, 245, 1),
-    0 0 10px rgba(45, 106, 79, 1),
-    0 6px 8px rgba(233, 196, 106, 1);
-}
+    text-shadow:
+      0 -6px 8px rgba(127, 221, 245, 1),
+      0 0 10px rgba(45, 106, 79, 1),
+      0 6px 8px rgba(233, 196, 106, 1);
+  }
 
-.ascendance-title:hover .ascendance-line {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 115, 238, 1) 0%,
-    rgba(127, 115, 178, 1) 20%,
-    rgba(255, 65, 81, 1) 80%
-  );
+  .ascendance-title:hover .ascendance-line {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 115, 238, 1) 0%,
+      rgba(127, 115, 178, 1) 20%,
+      rgba(255, 65, 81, 1) 80%
+    );
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ascendance-title:hover .ascendance-line::before {
+    opacity: 1;
+  }
+
+  .wilds-title:hover {
+    background: linear-gradient(
+      to bottom,
+      #f5d8a7 0%,
+      #c66423 60%,
+      #bb541e 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+      0 -6px 8px rgba(245, 216, 167, 1),
+      0 0 10px rgba(210, 129, 47, 1),
+      0 6px 8px rgba(187, 84, 30, 1);
+  }
+
+  .build-card img:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+      0 0 25px rgba(255, 255, 255, 0.2),
+      0 0 50px rgba(0, 0, 0, 0.6);
+  }
+
+  .weapon-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 
 .ascendance-line {
@@ -164,23 +201,6 @@ nav > a {
   filter: blur(9px);
 
   opacity: 0;
-}
-
-.ascendance-title:hover .ascendance-line::before {
-  opacity: 1;
-}
-
-.wilds-title:hover {
-  background: linear-gradient(to bottom, #f5d8a7 0%, #c66423 60%, #bb541e 100%);
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  text-shadow:
-    0 -6px 8px rgba(245, 216, 167, 1),
-    0 0 10px rgba(210, 129, 47, 1),
-    0 6px 8px rgba(187, 84, 30, 1);
 }
 
 h1 {
@@ -402,11 +422,6 @@ p.info {
   transition: transform 0.3s;
 }
 
-.weapon-card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .weapon-card h3 {
   width: 100%;
   margin: 0;
@@ -618,14 +633,6 @@ p.info {
     box-shadow 0.3s;
 }
 
-.build-card img:hover {
-  transform: scale(1.03);
-
-  box-shadow:
-    0 0 25px rgba(255, 255, 255, 0.2),
-    0 0 50px rgba(0, 0, 0, 0.6);
-}
-
 .build-card p {
   font-size: 1.3em;
 }
@@ -675,13 +682,16 @@ p.info {
   font-style: italic;
 }
 
+.mobil-version {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  /***
+  /*
   * {
     outline: 1px solid red;
   }
-
-  ***/
+  */
 
   section.last {
     width: 95%;
@@ -722,22 +732,55 @@ p.info {
     align-items: center;
 
     background-color: transparent;
-    background-image: url("Images/Epee2_1.png");
+    background-image: url("Images/Epee_briser.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: 40%;
   }
 
   nav ul {
-    gap: 50px;
+    gap: 100px;
     margin: 0px;
     padding: 0;
   }
 
   nav a {
     padding: 0;
-    font-size: 7px;
+    font-size: 10px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
+    width: 120px;
+  }
+
+  .ascendance-line {
+    display: none;
+  }
+
+  .ascendance-line.mobil-version {
+    display: inline;
+  }
+
+  nav > a {
+    width: 40px;
+    height: 40px;
+
+    border: 3px solid #fff5a8;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(370px) translateY(-20px);
+
+    box-shadow:
+      0 0 5px #fff5a8,
+      0 0 15px #ffb347,
+      0 0 30px #e67e22,
+      inset 0 0 15px #ffb347;
+  }
+
+  nav img {
+    width: 25px;
+    filter: drop-shadow(0 0 8px #e67e22);
   }
 }
