@@ -325,7 +325,7 @@ section iframe {
 section.last {
   margin: 80px auto;
   height: 450px;
-  width: 1750px;
+  width: 95%;
 
   background-image: url("Images/planche.png");
   background-size: cover;
@@ -694,15 +694,20 @@ p.info {
   */
 
   body.accueil::before {
-    background-size: 100% 100%;
+    height: 100dvh;
   }
 
   section.last {
     width: 95%;
+    height: auto;
   }
 
   section iframe {
-    width: 90%;
+    height: 250px;
+  }
+
+  section iframe {
+    max-width: 80%;
   }
 
   p.info {
