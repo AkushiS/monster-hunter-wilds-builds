@@ -754,7 +754,7 @@ p.info {
   }
 
   .titre-fond {
-    width: fit-content;
+    width: 300px;
     margin: 40px auto;
 
     padding: 20px;
@@ -798,25 +798,40 @@ p.info {
   nav > a {
     width: 40px;
     height: 40px;
-
-    border: 3px solid #fff5a8;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateX(370px) translateY(-20px);
-
-    box-shadow:
-      0 0 5px #fff5a8,
-      0 0 15px #ffb347,
-      0 0 30px #e67e22,
-      inset 0 0 15px #ffb347;
   }
 
   nav img {
     width: 25px;
     filter: drop-shadow(0 0 8px #e67e22);
+  }
+
+  .description-build {
+    font-size: 1em;
+    max-width: 320px;
+    padding: 10px;
+    line-height: 1.2;
+  }
+
+  .guides-container {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+  }
+
+  .weapon-card h3 {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .weapon-card {
+    width: 150px;
+    height: 150px;
+    background-position-y: 20%;
+  }
+
+  .info {
+    width: 80%;
+    max-width: 900px;
   }
 }
