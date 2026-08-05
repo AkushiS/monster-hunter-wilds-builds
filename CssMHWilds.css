@@ -20,7 +20,7 @@ body.ascendance {
 }
 
 body.accueil {
-  background-image: url("Images/Accueil_fond1.png");
+  background-image: url("Images/Accueil_fond1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ nav {
   align-items: center;
 
   background-color: transparent;
-  background-image: url("Images/Epee2_1.png");
+  background-image: url("Images/Epee2_1.webp");
   background-repeat: no-repeat;
   background-size: 1870px auto;
   background-position: center;
@@ -311,7 +311,7 @@ section iframe {
 }
 
 .info {
-  background: url("Images/parchemin1.png");
+  background: url("Images/parchemin1.webp");
 
   background-size: cover;
 
@@ -333,7 +333,7 @@ section.last {
   height: 450px;
   width: 95%;
 
-  background-image: url("Images/planche.png");
+  background-image: url("Images/planche.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -773,7 +773,7 @@ p.info {
     align-items: center;
 
     background-color: transparent;
-    background-image: url("Images/Epee_briser.png");
+    background-image: url("Images/Epee_briser.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
