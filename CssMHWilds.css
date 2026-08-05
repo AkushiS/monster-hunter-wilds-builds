@@ -294,6 +294,7 @@ section iframe {
 .titre-fond {
   width: fit-content;
   margin: 80px auto;
+  text-align: center;
 
   border: 3px solid rgba(45, 106, 79, 1);
   border-radius: 20px;
@@ -695,7 +696,7 @@ p.info {
   * {
     outline: 1px solid red;
   }
-  */
+    */
 
   body.accueil::before {
     height: 100dvh;
@@ -725,7 +726,7 @@ p.info {
   }
 
   .accueil-h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
 
     -webkit-text-stroke: 0.6px #000000;
   }
@@ -738,13 +739,14 @@ p.info {
     display: block;
     margin: 5px;
 
-    font-size: 2.1rem;
+    font-size: 2rem;
 
     -webkit-text-stroke: 0.6px #000;
   }
 
   .ascendance-h1 {
-    font-size: 2.1rem;
+    margin: 25px 25px;
+    font-size: 2rem;
 
     -webkit-text-stroke: 0.6px #000;
   }
@@ -798,6 +800,7 @@ p.info {
   nav > a {
     width: 40px;
     height: 40px;
+    transform: translateX(380px) translateY(-20px);
   }
 
   nav img {
@@ -813,9 +816,9 @@ p.info {
   }
 
   .guides-container {
-    display: grid;
-    justify-self: center;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px 25px;
   }
 
