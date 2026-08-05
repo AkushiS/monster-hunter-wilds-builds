@@ -289,6 +289,7 @@ section iframe {
   margin: 40px auto;
   box-shadow: 0 0 20px black;
   border-radius: 10px;
+  border: none;
 }
 
 .titre-fond {
@@ -359,11 +360,15 @@ section:has(.last-news) {
 }
 
 .last-news {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: italic;
   margin-bottom: 0px; /* espace sous le titre */
   margin-top: 20px;
 }
 
-section:has(.info) {
+div:has(.info) {
   display: flex;
   justify-content: center;
 }
@@ -580,8 +585,6 @@ p.info {
   transform: translateZ(0);
   backface-visibility: hidden;
 
-  width: 320px !important;
-  height: 320px !important;
   background-size: 70% !important;
 }
 
@@ -833,8 +836,16 @@ p.info {
     background-position-y: 20%;
   }
 
+  .modal {
+    padding-top: 150px;
+  }
+
   .info {
     width: 80%;
     max-width: 900px;
+  }
+
+  .last-news {
+    font-size: 1.5rem;
   }
 }

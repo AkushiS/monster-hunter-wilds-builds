@@ -196,7 +196,7 @@
           modal.classList.add("show");
 
           const targetX = window.innerWidth / 2 - rect.width / 2;
-          const targetY = -30;
+          const targetY = window.innerWidth <= 1024 ? 0 : -30;
 
           clone.style.left = targetX + "px";
           clone.style.top = targetY + "px";
@@ -209,9 +209,9 @@
 
           // IMPORTANT : on garde position FIXED
           clone.style.position = "fixed";
-          clone.style.left = "50%";
-          clone.style.top = "-30px";
-          clone.style.transform = "translateX(-50%)";
+          clone.style.left = "px";
+          clone.style.top = window.innerWidth <= 1024 ? "0px" : "-30px";
+          clone.style.transform = "none";
           clone.style.width = rect.width + "px";
           clone.style.height = rect.height + "px";
 
