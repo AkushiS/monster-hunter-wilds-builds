@@ -6,21 +6,21 @@ body {
 }
 
 body.wilds {
-  background-image: url("Images/MHW Decor.png");
+  background-image: url("../Images/MHW Decor.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 body.ascendance {
-  background-image: url("Images/Ascendance_fond.png");
+  background-image: url("../Images/Ascendance_fond.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 body.accueil {
-  background-image: url("Images/Accueil_fond1.webp");
+  background-image: url("../Images/Accueil_fond1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ nav {
   align-items: center;
 
   background-color: transparent;
-  background-image: url("Images/Epee2_1.webp");
+  background-image: url("../Images/Epee2_1.webp");
   background-repeat: no-repeat;
   background-size: 1870px auto;
   background-position: center;
@@ -311,7 +311,7 @@ section iframe {
 }
 
 .info {
-  background: url("Images/parchemin1.webp");
+  background: url("../Images/parchemin1.webp");
 
   background-size: cover;
 
@@ -333,7 +333,7 @@ section.last {
   height: 450px;
   width: 95%;
 
-  background-image: url("Images/planche.webp");
+  background-image: url("../Images/planche.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -445,59 +445,59 @@ p.info {
 }
 
 .Arc {
-  background-image: url("Images/Logo\ Arc.png");
+  background-image: url("../Images/Logo\ Arc.png");
 }
 
 .Grande-epee {
-  background-image: url("Images/Logo\ GS.png");
+  background-image: url("../Images/Logo\ GS.png");
 }
 
 .Double-lames {
-  background-image: url("Images/Logo\ DB.png");
+  background-image: url("../Images/Logo\ DB.png");
 }
 
 .Marteau {
-  background-image: url("Images/Logo\ Marteau.png");
+  background-image: url("../Images/Logo\ Marteau.png");
 }
 
 .Corne-de-chasse {
-  background-image: url("Images/Logo\ Corne\ de\ chasse.png");
+  background-image: url("../Images/Logo\ Corne\ de\ chasse.png");
 }
 
 .Epee-et-bouclier {
-  background-image: url("Images/Logo\ SNS.png");
+  background-image: url("../Images/Logo\ SNS.png");
 }
 
 .Epee-longue {
-  background-image: url("Images/Logo\ LS.png");
+  background-image: url("../Images/Logo\ LS.png");
 }
 
 .Lance {
-  background-image: url("Images/Logo\ Lance.png");
+  background-image: url("../Images/Logo\ Lance.png");
 }
 
 .Lance-canon {
-  background-image: url("Images/Logo\ Lance\ Canon.png");
+  background-image: url("../Images/Logo\ Lance\ Canon.png");
 }
 
 .Fusarbalete-leger {
-  background-image: url("Images/Logo\ LBG.png");
+  background-image: url("../Images/Logo\ LBG.png");
 }
 
 .Fusarbalete-lourd {
-  background-image: url("Images/Logo\ HBG.png");
+  background-image: url("../Images/Logo\ HBG.png");
 }
 
 .Insectoglaive {
-  background-image: url("Images/Logo\ IG.png");
+  background-image: url("../Images/Logo\ IG.png");
 }
 
 .Morpho-hache {
-  background-image: url("Images/Logo\ Morpho.png");
+  background-image: url("../Images/Logo\ Morpho.png");
 }
 
 .Volto-hache {
-  background-image: url("Images/Logo\ Volto.png");
+  background-image: url("../Images/Logo\ Volto.png");
 }
 
 /* Fond assombri */
@@ -773,7 +773,7 @@ p.info {
     align-items: center;
 
     background-color: transparent;
-    background-image: url("Images/Epee_briser.webp");
+    background-image: url("../Images/Epee_briser.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
