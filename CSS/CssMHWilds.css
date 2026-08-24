@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body.wilds {
   background-image: url("../Images/MHW Decor.png");
   background-size: cover;
