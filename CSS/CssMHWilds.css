@@ -764,46 +764,58 @@ p.info {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  /*
-  * {
-    outline: 1px solid red;
-  }
-    */
-
+@media screen and (max-width: 1440px) {
   body.accueil::before {
     height: 100dvh;
   }
 
   section.last {
     width: 95%;
-    height: auto;
+    height: 400px;
   }
 
-  /* carroussel */
+  .video-carousel {
+    width: 100%;
+    height: 350px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 290px 60px;
+
+    gap: 0;
+    overflow: hidden;
+  }
 
   .video-track {
-    width: 80%;
+    grid-column: 1 / 3;
+    grid-row: 1;
+
+    width: 100%;
+    height: 290px;
   }
 
   .video-slide {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  .video-slide--left,
-  .video-slide--right {
-    display: none;
-  }
-
-  .video-slide--center {
-    left: 50%;
-    transform: translateX(-50%);
+    width: 400px;
+    height: 225px;
   }
 
   .video-button {
-    font-size: 2rem;
+    grid-row: 2;
+    align-self: center;
+
+    font-size: 2.5rem;
+  }
+
+  .video-button--prev {
+    grid-column: 1;
+    justify-self: end;
+    margin-right: 50px;
+  }
+
+  .video-button--next {
+    grid-column: 2;
+    justify-self: start;
+    margin-left: 50px;
   }
 
   /* fin carroussel */
@@ -937,5 +949,55 @@ p.info {
 
   .last-news {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.last {
+    width: 95%;
+    height: 400px;
+  }
+
+  .video-carousel {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 270px 60px;
+    gap: 0;
+  }
+
+  .video-track {
+    grid-column: 1 / 3;
+    grid-row: 1;
+
+    width: 100%;
+    height: 270px;
+  }
+
+  .video-slide {
+    width: 280px;
+    height: 158px;
+  }
+
+  .video-button {
+    grid-row: 2;
+    align-self: center;
+
+    font-size: 2rem;
+  }
+
+  .video-button--prev {
+    grid-column: 1;
+    justify-self: end;
+    margin-right: 35px;
+  }
+
+  .video-button--next {
+    grid-column: 2;
+    justify-self: start;
+    margin-left: 35px;
   }
 }
