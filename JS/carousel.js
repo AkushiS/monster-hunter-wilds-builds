@@ -17,7 +17,7 @@ function updateVideoCarousel() {
   // Rayon du cercle selon la taille de l'écran ET le nombre de vidéos
   let radius;
 
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 768) {
     // Mobile
     if (totalVideos <= 3) {
       radius = 150;
