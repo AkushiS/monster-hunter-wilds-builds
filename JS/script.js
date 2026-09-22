@@ -1,24 +1,3 @@
-const loader = document.querySelector(".loader");
-const navigation = performance.getEntriesByType("navigation")[0];
-
-let navigationInterne = false;
-
-if (document.referrer) {
-  try {
-    const referrerUrl = new URL(document.referrer);
-
-    navigationInterne =
-      referrerUrl.origin === window.location.origin &&
-      navigation?.type !== "reload";
-  } catch (error) {
-    navigationInterne = false;
-  }
-}
-
-if (navigationInterne) {
-  loader.style.display = "none";
-}
-
 const weaponCards = document.querySelectorAll(".weapon-card");
 const modal = document.getElementById("modal");
 const modalHeader = document.getElementById("modal-header");
