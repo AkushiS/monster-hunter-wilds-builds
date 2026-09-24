@@ -792,6 +792,8 @@ p.info {
 }
 
 .build-card {
+  position: relative;
+
   background: transparent;
   padding: 0;
   margin-bottom: 40px;
@@ -870,6 +872,42 @@ p.info {
 
 .mobil-version {
   display: none;
+}
+
+.weapon-card {
+  position: relative;
+}
+
+.new-badge {
+  position: absolute;
+  top: 15px;
+  left: -20px;
+
+  padding: 5px 25px;
+
+  background-color: red;
+  color: white;
+
+  font-family: "Cinzel Decorative", serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  transform: rotate(-45deg);
+
+  z-index: 10;
+
+  animation: new-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes new-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 @media screen and (max-width: 1440px) {
