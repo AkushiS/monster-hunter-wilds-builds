@@ -914,12 +914,37 @@ p.info {
   nav {
     background-size: 100% 250px;
   }
+
+  .image-1 {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 1000px;
+  }
+
+  .loader-text {
+    font-size: 45px;
+    gap: 10px;
+  }
+
+  @keyframes loader-wave {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -80px;
+    }
+    100% {
+      top: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .image-1 {
-    left: 150px;
-    top: 40px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 1200px;
   }
 
@@ -1117,8 +1142,9 @@ p.info {
 
 @media screen and (max-width: 1024px) {
   .image-1 {
-    left: 30px;
-    top: 90px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 1000px;
   }
 
@@ -1142,8 +1168,9 @@ p.info {
 
 @media screen and (max-width: 768px) {
   .image-1 {
-    left: -10px;
-    top: 165px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 800px;
   }
 
@@ -1215,8 +1242,9 @@ p.info {
 
 @media screen and (max-width: 425px) {
   .image-1 {
-    left: 7px;
-    top: 280px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 450px;
   }
 
@@ -1240,8 +1268,9 @@ p.info {
 
 @media screen and (max-width: 375px) {
   .image-1 {
-    left: 0px;
-    top: 300px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 400px;
   }
 
