@@ -919,11 +919,11 @@ p.info {
     position: absolute;
     inset: 0;
     margin: auto;
-    width: 1000px;
+    width: 1500px;
   }
 
   .loader-text {
-    font-size: 45px;
+    font-size: 67px;
     gap: 10px;
   }
 
@@ -932,7 +932,7 @@ p.info {
       top: 0;
     }
     50% {
-      top: -80px;
+      top: -100px;
     }
     100% {
       top: 0;
