@@ -910,6 +910,12 @@ p.info {
   }
 }
 
+@media (min-width: 1920px) {
+  nav {
+    background-size: 100% 250px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .image-1 {
     left: 150px;
