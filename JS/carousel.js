@@ -5,6 +5,7 @@ const prevButton = document.querySelector(".video-button--prev");
 const nextButton = document.querySelector(".video-button--next");
 
 let currentVideo = 0;
+let autoSlide;
 
 // Mise à jour du carrousel
 
@@ -161,7 +162,7 @@ prevButton.addEventListener("click", () => {
 if (videoSlides.length > 0) {
   updateVideoCarousel();
 
-  setInterval(() => {
+  autoSlide = setInterval(() => {
     currentVideo++;
 
     if (currentVideo >= videoSlides.length) {
@@ -170,4 +171,20 @@ if (videoSlides.length > 0) {
 
     updateVideoCarousel();
   }, 5000);
+}
+
+function onYouTubeIframeAPIReady() {
+  videoSlides.forEach((video) => {
+    new YT.Player(video, {
+      events: {
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING) {
+    clearInterval(autoSlide);
+  }
 }
