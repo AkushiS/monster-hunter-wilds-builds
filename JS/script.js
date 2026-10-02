@@ -6,6 +6,10 @@ const newBuilds = [
   "Build Morpho-hache Raw/Elem",
   "Build Morpho-hache Choc",
   "Build Volto-hache Choc",
+  "Arc",
+  "Build Arc Raw/Crit",
+  "Double lames",
+  "Build Double Lames Raw/Crit",
 ];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -111,7 +115,7 @@ function openModal(event, weapon, element) {
       case "Arc":
         builds = `
           <div class="build-card">
-            <h3>Build Elementaire No Crit</h3>
+            <h3>Build Arc Elementaire No Crit</h3>
             <a href="Images/Arc-ElemNoCrit.png" target="_blank">
               <img src="Images/Arc-ElemNoCrit.png" alt="Build Élémentaire No Crit">
             </a>
@@ -119,6 +123,17 @@ function openModal(event, weapon, element) {
             <p>En revanche, contre les autres monstres, vous bénéficierez à la fois du DPS, du confort et de la survie souhaités. Grâce aux nombreux emplacements de joyaux de niveau 1 et 2, vous pouvez adapter votre build en privilégiant davantage de niveaux d’Athlète ou de Métabolisme.</p>
             <p>Pour ce faire, il est possible de sacrifier Bénédiction si vous êtes à l’aise avec les esquives, ainsi que quelques niveaux d’Union ou de Performance optimale.</p>
             <p>C'est un build qui fonctionne avec une arme élémentaire. Pour profiter pleinement de ce build, il vous faudra avoir au minimum 2 bonus de renforcement avec Boost élémentaire.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Arc Raw/Crit</h3>
+            <a href="Images/Arc-Raw.png" target="_blank">
+              <img src="Images/Arc-Raw.png" alt="Build Arc Raw/Crit">
+            </a>
+            <p>Un build Arc basé sur l'attaque et l'affinité. Si vous ne voulez pas devoir monter plusieurs Arcs de chaque élément, ou pour affronter l'Arkveld normal ou Alpha.</p>
+            <p>Attention, un Build Arc avec de l'élément sera généralement supérieur en DPS (hors Arkveld).</p>
+            <p>Sur le talisman, on peut y voir les talents Quatrième tir ainsi que Géologiste, mais ils sont inutiles. Vous pouvez donc potentiellement avoir d'autres talents plus utiles. Il y a également le talent Salve mortelle pour augmenter les dégâts de Mille dragons, Perce-Dragon ou Munitions traçantes. Mais si vous n'utilisez pas souvent ces attaques, vous pouvez opter pour d'autres talents, comme Maître d'arme, Machine de guerre, etc.</p>
+            <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
           </div>
         `;
         break;
@@ -141,15 +156,26 @@ function openModal(event, weapon, element) {
       case "Double lames":
         builds = `
           <div class="build-card">
-            <h3>Build Elementaire No Crit</h3>
+            <h3>Build Double Lames Elementaire No Crit</h3>
             <a href="Images/DB-ElemNoCrit.png" target="_blank">
-              <img src="Images/DB-ElemNoCrit.png" alt="Build Elementaire No Crit">
+              <img src="Images/DB-ElemNoCrit.png" alt="Build Double Lames Elementaire No Crit">
             </a>
             <p>Voici un build Double Lames qui peut évoluer selon vos préférences. Hormis face à l’Arkveld classique, il n’est pas inférieur au build critique en termes de dégâts. En effet, les chaînes de l’Arkveld classique sont immunisées aux dégâts élémentaires, ce qui réduit fortement l’efficacité des builds élémentaires.</p>
             <p>À l’inverse, ce build reste tout à fait efficace contre l’Arkveld Alpha Suprême, dont les chaînes ne sont pas immunisées aux dégâts élémentaires. Il conserve ainsi une grande partie de son potentiel offensif.</p>
             <p>Face aux autres monstres, vous bénéficierez d’un excellent DPS, d’un bon confort de jeu et d’une bonne survie. Grâce aux nombreux emplacements de joyaux de niveau 1 et 2, vous pouvez adapter le build à votre style de jeu en privilégiant davantage de niveaux d’Athlète, de Marathonien ou encore de Métabolisme.</p>
             <p>Pour cela, vous pouvez sacrifier Bénédiction et Contre-attaque si vous êtes à l’aise avec les esquives, ou simplement si vous souhaitez privilégier le confort au détriment d’une partie du DPS.</p>
             <p>C'est un build qui fonctionne avec une arme élémentaire. Pour profiter pleinement de ce build, il vous faudra avoir au minimum 2 bonus de renforcement avec Boost élémentaire.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Double Lames Raw/Crit</h3>
+            <a href="Images/DB-Raw.png" target="_blank">
+              <img src="Images/DB-Raw.png" alt="Build Double Lames Raw/Crit">
+            </a>
+            <p>Un build Double Lames basé sur l'attaque et l'affinité. Si vous ne voulez pas devoir monter plusieurs Double Lames de chaque élément, ou pour affronter l'Arkveld normal ou Alpha.</p>
+            <p>Attention, un Build Double Lames avec de l'élément sera généralement supérieur en DPS (hors Arkveld).</p>
+            <p>Parmi les bonus de set, il y a « Révolte du Jin Dahad ». Ce bonus de set ne peut pas être activé avec une quelconque attaque avec les Doubles Lames. Vous pouvez, selon votre choix, remplacer le torse Jin Dahad Y par le torse Nu Udra Y. Ils sont équivalents, mais il est préférable de choisir celui du Jin Dahad dans les cas où vous vous feriez immobiliser par l'Arkveld, ou même geler par le Jin Dahad ou Oméga Sadique, à ce moment-là, le bonus 2p Jin Dahad pourra s'activer.</p>
+            <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
           </div>
         `;
         break;
@@ -301,7 +327,7 @@ function openModal(event, weapon, element) {
       case "Marteau":
         builds = `
           <div class="build-card">
-            <h3>Builds Marteau DPS</h3>
+            <h3>Builds Marteau DPS</h3>-
             <a href="Images/Marteau-DPS.png" target="_blank">
               <img src="Images/Marteau-DPS.png" alt="Build Marteau DPS">
             </a>
