@@ -335,7 +335,7 @@ function openModal(event, weapon, element) {
             <p>En effet, au lieu de devoir utiliser des talents comme Ignifuge ou Étanchéité, vous disposez directement des 3 niveaux du talent Totem élémentaire, ce qui vous confère une immunité aux fléaux élémentaires.</p>
             <p>Ce build vous octroie également d’importants dégâts. Même s’il vous manque un niveau de Témérité, vous disposez de tout ce qu’il faut en termes de talents offensifs, ainsi que d’un bonus supplémentaire grâce au talent Conversion élémentaire niveau 3, qui ajoute parfois environ 300 de dégâts. De plus, lorsque vous utilisez un marteau élémentaire dragon, ce talent peut également augmenter les dégâts de cet élément.</p>
             <p>Concernant le talisman, si vous avez la possibilité d’obtenir 2 niveaux ou plus de Machine de guerre, cela sera plus optimal afin d’atteindre le niveau 5 de Machine de guerre.</p>
-            <p>C'est un build polyvalent qui fonctionne surtout avec une arme élémentaire, mais aussi avec une arme en affliction ou en attaque. Cependant, il ne bénéficiera pas du talent Conversion élémentaire. Vous pouvez donc remplacer la Cotte Arkvulcan Y par la Cotte Jin Dahad Y et y mettre des joyaux Bouchon d'oreille.</p>
+            <p>C'est un build polyvalent qui fonctionne surtout avec une arme élémentaire, mais aussi avec une arme en affliction ou en attaque. Cependant, si vous ne jouez pas une arme élémentaire alors il ne bénéficiera pas du talent Conversion élémentaire. Vous pouvez donc remplacer la Cotte Arkvulcan Y qui contient Conversion élémentaire Lv 3 par la Cotte Jin Dahad Y et y mettre des joyaux Bouchon d'oreille.</p>
           </div>
         `;
         break;
