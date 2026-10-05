@@ -10,6 +10,8 @@ const newBuilds = [
   "Build Arc Raw/Crit",
   "Double lames",
   "Build Double Lames Raw/Crit",
+  "Corne de chasse",
+  "Build Corne de chasse Perma Boost",
 ];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -149,6 +151,19 @@ function openModal(event, weapon, element) {
             <p>Ce build vous permet d’infliger un maximum de dégâts tout en disposant de nombreux emplacements de joyaux pour adapter vos talents selon le monstre affronté.</p>
             <p>On peut également remarquer que la Corne de chasse utilisée ici n’a pas d’élément. Le choix d’une Corne de chasse Artian Gogmazios non élémentaire modifie les mélodies par rapport à une version élémentaire. Toutefois, les deux options restent viables : il n’y a pas de différence significative de dégâts entre une version élémentaire et non élémentaire. La principale variation concerne les musiques, que vous choisirez donc selon vos préférences de jeu.</p>
             <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Corne de chasse Perma Boost</h3>
+            <a href="Images/HH-Perma-Boost.png" target="_blank">
+              <img src="Images/HH-Perma-Boost.png" alt="Build Corne de chasse Perma Boost">
+            </a>
+            <p>Ce build est basé sur l'arme de l'Arkveld « Galahad le Tonitruant », qui est la seule corne de chasse avec la mélodie : Extension des mélodies. C'est cette mélodie qui vous permet de garder les boosts de vos deux cornes de chasse actifs durant le combat.</p>
+            <p>Un build Corne de chasse qui vous permettra, à vous et à vos alliés, de bénéficier de boosts en permanence. Ce build vous offre un confort extrême pour soigner et booster rapidement vos alliés, tout en vous permettant de ne pas trébucher face aux monstres.</p>
+            <p>Selon votre talisman et le nombre d'emplacements de joyaux qu'il possède, vous pouvez avoir jusqu'à 3 emplacements de niveau 1 supplémentaires, ce qui vous permettra d'ajouter d'autres compétences de confort, comme Anti-hémorragie face au Seregios, Mobilité eau/boue huileuse face au Gogmazios, ou encore 2 niveaux d'Adaptabilité et 1 niveau de Ignifuge contre le Nu Udra AT.</p>
+            <p>Et grâce à la corne de chasse de l'Arkveld « Galahad le Tonitruant », vous bénéficiez également du boost de la Bulle d'écho, qui apporte de la défense ainsi que 5 points de résistance élémentaire. Combiné au repas, cela vous permet, avec un seul niveau d'Ignifuge, d'Aura draconique, d'Étanchéité, de Paratonnerre ou d'Antigel, d'atteindre les 20 points de résistance élémentaire correspondants. Vous pourrez ainsi éviter de subir le fléau élémentaire du monstre.</p>
+            <p>Concernant Mycologue extrême, le niveau 2 apporte Champinitros et Champaralysies, qui remplacent les Potions démon et les Potions de pierre. Vous pouvez donc vous passer de ces champignons. Pour le niveau 3, la Mandragore ne fonctionne pas avec Un pour tous, et Champexciteur permet d'obtenir un bonus aléatoire parmi tous les champignons, ce qui n'est donc pas intéressant. Seul le Fléau du diable peut être intéressant pour vos alliés, selon l'arme qu'ils jouent. Cependant, le Fléau du diable donne le même effet que la Potion de vitalité. Ainsi, si vous n'avez pas une seconde corne de chasse qui vous apporte la mélodie " Protection ouïe ", vous pouvez retirer ces 2 niveaux de Mycologue extrême afin de prendre le talent Bouchon d'oreille niveau 2.</p>
+            <p>Et petit bonus : dans ce build, vous avez le bonus de groupe « Faveur de la gloire ». Ce bonus vous permet d'obtenir un peu plus de récompenses lors des quêtes.</p>
           </div>
         `;
         break;
