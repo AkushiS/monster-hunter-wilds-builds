@@ -14,6 +14,8 @@ const newBuilds = [
   "Build Corne de chasse Perma Boost",
   "Marteau",
   "Build Marteau DPS",
+  "Fusarbalète léger",
+  "Build Mun Normal",
 ];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -306,6 +308,16 @@ function openModal(event, weapon, element) {
             <p>Concernant le talisman, le plus important est d’obtenir Antivirus pour les 10 % d’affinité qu’il procure. Cependant, vous pouvez choisir d’autres options selon vos préférences, le choix des talents sur le talisman restant entièrement flexible.</p>
             <p class="italic">Le build Fusarbalète léger DPS élémentaire est identique au build Fusarbalète lourd DPS élémentaire.</p>
             <p>C'est un build qui fonctionne avec une arme élémentaire.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Mun Normal</h3>
+            <a href="Images/LBG-Mun-Normal.png" target="_blank">
+              <img src="Images/LBG-Mun-Normal.png" alt="Build Mun Normal">
+            </a>
+            <p>Ce build est complet, vous n’avez rien à faire pour activer vos talents, mis à part manger un steak pour activer le bonus 2p du Xu Wu, qui vous apportera +15 d’attaque pendant 3 minutes.</p>
+            <p>Concernant le talisman, si vous avez Mise à mort, alors il vous suffit de mettre un joyau Vendetta à la place d’un joyau Mise à mort. Si vous avez Témérité sur le talisman, il vous suffira de remplacer un joyau Témérité par un joyau Vendetta. Pour Premier Tir, si vous avez Balistique sur le talisman, alors vous échangerez le joyau Kyudo III contre un joyau Premier Tir. De même, si vous avez Tir super rapide sur le talisman, il vous suffira de le remplacer par le joyau du talent manquant.</p>
+            <p>Ce build est fait pour jouer avec des munitions normales, donc des munitions basées uniquement sur l’attaque. Il est donc inutile de jouer élémentaire. Concernant les afflictions, si vous le souhaitez, vous pouvez jouer Paralysie ou Sommeil si vous voulez paralyser ou endormir le monstre à certains moments grâce aux munitions Paralysie ou Sommeil.</p>
           </div>
         `;
         break;
