@@ -16,6 +16,8 @@ const newBuilds = [
   "Build Marteau DPS",
   "Fusarbalète léger",
   "Build Mun Normal",
+  "Fusarbalète lourd",
+  "Build HBG Mortier",
 ];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -269,7 +271,7 @@ function openModal(event, weapon, element) {
       case "Lance":
         builds = `
           <div class="build-card">
-            <h3>Builds Lance DPS</h3>
+            <h3>Build Lance DPS</h3>
             <a href="Images/Lance-DPS.png" target="_blank">
               <img src="Images/Lance-DPS.png" alt="Build Lance DPS">
             </a>
@@ -285,7 +287,7 @@ function openModal(event, weapon, element) {
       case "Lance canon":
         builds = `
           <div class="build-card">
-            <h3>Builds Lance canon DPS</h3>
+            <h3>Build Lance canon DPS</h3>
             <a href="Images/LanceCanon-DPS.png" target="_blank">
               <img src="Images/LanceCanon-DPS.png" alt="Build Lance canon DPS">
             </a>
@@ -299,9 +301,9 @@ function openModal(event, weapon, element) {
       case "Fusarbalète léger":
         builds = `
           <div class="build-card">
-            <h3>Builds DPS Elementaire</h3>
+            <h3>Build LBG DPS Elementaire</h3>
             <a href="Images/LBG-ElemCrit.png" target="_blank">
-              <img src="Images/LBG-ElemCrit.png" alt="Build DPS Elementaire">
+              <img src="Images/LBG-ElemCrit.png" alt="Build LBG DPS Elementaire">
             </a>
             <p>Ce build LBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.</p>
             <p>Ce build inclut également quelques talents de confort, comme Bouchon d’oreilles, qui peut être remplacé si vous le souhaitez afin de compléter le niveau 5 de Performance optimale et ainsi augmenter encore davantage vos dégâts.</p>
@@ -311,9 +313,9 @@ function openModal(event, weapon, element) {
           </div>
 
           <div class="build-card">
-            <h3>Build Mun Normal</h3>
+            <h3>Build LBG Mun Normal</h3>
             <a href="Images/LBG-Mun-Normal.png" target="_blank">
-              <img src="Images/LBG-Mun-Normal.png" alt="Build Mun Normal">
+              <img src="Images/LBG-Mun-Normal.png" alt="Build LBG Mun Normal">
             </a>
             <p>Ce build est complet, vous n’avez rien à faire pour activer vos talents, mis à part manger un steak pour activer le bonus 2p du Xu Wu, qui vous apportera +15 d’attaque pendant 3 minutes.</p>
             <p>Concernant le talisman, si vous avez Mise à mort, alors il vous suffit de mettre un joyau Vendetta à la place d’un joyau Mise à mort. Si vous avez Témérité sur le talisman, il vous suffira de remplacer un joyau Témérité par un joyau Vendetta. Pour Premier Tir, si vous avez Balistique sur le talisman, alors vous échangerez le joyau Kyudo III contre un joyau Premier Tir. De même, si vous avez Tir super rapide sur le talisman, il vous suffira de le remplacer par le joyau du talent manquant.</p>
@@ -325,9 +327,9 @@ function openModal(event, weapon, element) {
       case "Fusarbalète lourd":
         builds = `
           <div class="build-card">
-            <h3>Builds DPS Elementaire</h3>
+            <h3>Build HBG DPS Elementaire</h3>
             <a href="Images/HBG-ElemCrit.png" target="_blank">
-              <img src="Images/HBG-ElemCrit.png" alt="Build DPS Elementaire">
+              <img src="Images/HBG-ElemCrit.png" alt="Build HBG DPS Elementaire">
             </a>
             <p>Ce build HBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.</p>
             <p>Ce build inclut également quelques talents de confort, comme Bouchon d’oreilles, qui peut être remplacé si vous le souhaitez afin de compléter le niveau 5 de Performance optimale et ainsi augmenter encore davantage vos dégâts.</p>
@@ -335,13 +337,27 @@ function openModal(event, weapon, element) {
             <p class="italic">Le build Fusarbalète lourd DPS élémentaire est identique au build Fusarbalète léger DPS élémentaire.</p>
             <p>C'est un build qui fonctionne avec une arme élémentaire.</p>
           </div>
+
+          <div class="build-card">
+            <h3>Build HBG Mortier</h3>
+            <a href="Images/HBG-Mortier.png" target="_blank">
+              <img src="Images/HBG-Mortier.png" alt="Build HBG Mortier">
+            </a>
+            <p>Ce build HBG est principalement conçu pour être joué avec « Combustion Souffle-du-dragon », une attaque qui ne peut pas infliger de coups critiques et dont les dégâts dépendent uniquement de votre attaque. Le bonus Xu Wu vous permet donc de bénéficier de +30 en attaque pendant 3 minutes après avoir mangé un steak.</p>
+
+            <p>C'est un build qui offre énormément de confort, notamment grâce à Trompe-la-mort pour la mobilité, à Bouchon d'oreille pour bloquer les cris des monstres pendant que vous tirez avec le « Souffle-du-dragon », ainsi qu'à Fenêtre d'invulnérabilité pour faciliter les esquives, cela vous permet d'activer plus facilement Poussée d'adrénaline, et Rengainage éclair ainsi que Carnassier pour vous soigner à temps avant une éventuelle attaque du monstre.</p>
+
+            <p>Concernant le talisman, vous pouvez choisir entre Salve mortelle et BOUM ! selon le talent que vous obtenez, il vous suffit d'ajouter l'autre en joyau. Même si vous n'avez pas le point supplémentaire en Trompe-la-mort, le niveau 2 reste déjà très agréable. Vous pouvez toutefois réduire Fenêtre d'invulnérabilité si vous le préférez, voire diminuer Bouchon d'oreille. En effet, le niveau 3 de Bouchon d'oreille n'est nécessaire que contre Zoh Shia, Gogmazios, Gravios et Jin Dahaad, ainsi que pour bloquer le cri du Gore Magala lorsqu'il entre dans son état enragé.</p>
+
+            <p>Ce build ne repose pas nécessairement sur les dégâts élémentaires ou les afflictions. Cependant, en utiliser ne vous empêchera pas d'infliger de bons dégâts : cela vous permettra simplement de profiter de munitions supplémentaires selon le type de HBG choisi. Par exemple, avec un HBG Feu, vous disposerez de munitions incendiaires, tandis qu'avec un HBG Explosion, vous aurez accès aux munitions antiblindage, etc.</p>
+          </div>
         `;
         break;
 
       case "Insectoglaive":
         builds = `
           <div class="build-card">
-            <h3>Builds Insectoglaive DPS</h3>
+            <h3>Build Insectoglaive DPS</h3>
             <a href="Images/IG-DPS.png" target="_blank">
               <img src="Images/IG-DPS.png" alt="Build Insectoglaive DPS">
             </a>
@@ -356,7 +372,7 @@ function openModal(event, weapon, element) {
       case "Marteau":
         builds = `
           <div class="build-card">
-            <h3>Builds Marteau Multi Proc</h3>-
+            <h3>Build Marteau Multi Proc</h3>-
             <a href="Images/Marteau-Multi-Proc.png" target="_blank">
               <img src="Images/Marteau-Multi-Proc.png" alt="Build Marteau Multi Proc">
             </a>
@@ -368,7 +384,7 @@ function openModal(event, weapon, element) {
           </div>
 
           <div class="build-card">
-            <h3>Builds Marteau DPS</h3>-
+            <h3>Build Marteau DPS</h3>-
             <a href="Images/Marteau-DPS.png" target="_blank">
               <img src="Images/Marteau-DPS.png" alt="Build Marteau DPS">
             </a>
@@ -383,7 +399,7 @@ function openModal(event, weapon, element) {
       case "Morpho-hache":
         builds = `
           <div class="build-card">
-            <h3>Builds Morpho Full Crit</h3>
+            <h3>Build Morpho Full Crit</h3>
             <a href="Images/Morpho-Crit.png" target="_blank">
               <img src="Images/Morpho-Crit.png" alt="Build Morpho Full Crit">
             </a>
