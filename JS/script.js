@@ -18,6 +18,10 @@ const newBuilds = [
   "Build Mun Normal",
   "Fusarbalète lourd",
   "Build HBG Mortier",
+  "Grande épée",
+  "Lance",
+  "Build GS DPS Confort",
+  "Build Lance Auto-Régén",
 ];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -265,6 +269,17 @@ function openModal(event, weapon, element) {
             <p>Concernant le talisman, il est idéal d'avoir deux niveaux de Machine de guerre plutôt qu’un seul afin d’atteindre le niveau 5.</p>
             <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
           </div>
+
+          <div class="build-card">
+            <h3>Build GS DPS Confort</h3>
+            <a href="Images/GS-DPS-Confort.png" target="_blank">
+              <img src="Images/GS-DPS-Confort.png" alt="Build GS DPS Confort">
+            </a>
+            <p>Voici un build GS moins puissant que le précédent, mais qui vous offre un meilleur confort. Vous pouvez obtenir Crâne d'acier niveau 3 et Bouchon d'oreille niveau 2, ainsi que le bonus 2p « Volonté de l'Anjanath tonnerre », qui vous permet de mieux profiter du talent Corps et âme.</p>
+            <p>Dans ce build, vous avez le choix entre le bonus 2p « Puissance du Doshaguma » et le bonus 2p « Révolte du Jin Dahaad », selon le bonus de set que vous souhaitez obtenir sur votre arme Gogmazios.</p>
+            <p>Concernant le talisman, vous devez principalement avoir soit Mise à mort niveau 1, soit Vendetta niveau 1. Pour bénéficier de tout le confort souhaité, il vous faudra également des emplacements de niveau 2 et 1. Le talent Affûtage rapide n'est pas obligatoire : je vous conseillerais plutôt d'opter pour Garde offensif niveau 3 ou Concentration niveau 3. Cela vous permettra de retirer le joyau Concentration ou Gardien afin de le remplacer par un joyau Berserker de niveau 2 et ainsi compléter le talent Berserker jusqu'à son niveau maximal.</p>
+            <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme élémentaire qu'avec une arme en affliction ou en attaque. Cependant, si vous souhaitez profiter du bonus 2p Gogmapocalypse, il sera préférable de jouer avec une GS élémentaire.</p>
+          </div>
         `;
         break;
 
@@ -280,6 +295,16 @@ function openModal(event, weapon, element) {
             <p>Concernant le talisman, comme vous pouvez le voir, il s’agit d’un talisman offrant directement les 3 niveaux d’Ultra-garde, ce qui ne correspond pas forcément à un build dit « DPS ». Les talents recherchés sur le talisman restent donc flexibles. L’objectif est surtout d’obtenir au moins le niveau de Mise à mort permettant d’atteindre le niveau 5.</p>
             <p>Pour les monstres contre lesquels Ultra-garde n’est pas nécessaire, vous pouvez privilégier des niveaux de Machine de guerre, par exemple.</p>
             <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Lance Auto-Régén</h3>
+            <a href="Images/Lance-Auto-Regen.png" target="_blank">
+              <img src="Images/Lance-Auto-Regen.png" alt="Build Lance Auto-Régén">
+            </a>
+            <p>C'est un build conçu pour être autosuffisant. Grâce aux bonus 2p « Appétit de l'Arkveld » et 4p « Pouls du Zoh Shia », vous bénéficiez d'une légère régénération de vie lors de vos attaques, ainsi que d'une régénération passive continue. De plus, grâce au talent Cercle de vie, les effets de vos bonus et objets de régénération sont amplifiés. Le talent Halo de guérison vous permet également de récupérer beaucoup plus rapidement les PV temporairement perdus (la jauge rouge de la barre de vie).</p>
+            <p>Concernant le talisman, vous pouvez choisir celui que vous souhaitez. Pour ma part, j'ai opté pour Bénédiction niveau 3, avec Neutralisation niveau 3 en bonus. Cela me permettra de paralyser les monstres un peu plus rapidement, étant donné que mon arme inflige des dégâts de paralysie.</p>
+            <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme élémentaire qu'avec une arme en affliction ou en attaque.</p>
           </div>
         `;
         break;
