@@ -1,13 +1,4 @@
-const newBuilds = [
-  "Fusarbalète léger",
-  "Build Mun Normal",
-  "Fusarbalète lourd",
-  "Build HBG Mortier",
-  "Grande épée",
-  "Lance",
-  "Build GS DPS Confort",
-  "Build Lance Auto-Régén",
-];
+const newBuilds = [];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
 
