@@ -874,18 +874,14 @@ p.info {
   display: none;
 }
 
-.weapon-card {
-  position: relative;
-}
-
-.new-badge {
+.new-badge,
+.modified-badge {
   position: absolute;
   top: 15px;
   left: -20px;
 
   padding: 5px 25px;
 
-  background-color: red;
   color: white;
 
   font-family: "Cinzel Decorative", serif;
@@ -897,6 +893,23 @@ p.info {
   z-index: 10;
 
   animation: new-blink 1.2s ease-in-out infinite;
+}
+
+/* Bandeau NEW */
+.new-badge {
+  background-color: red;
+}
+
+/* Bandeau MODIFIÉ */
+.modified-badge {
+  background-color: #168bff;
+  padding: 5px 12px;
+  left: -10px;
+  top: 19px;
+}
+
+.build-card {
+  overflow: hidden;
 }
 
 @keyframes new-blink {

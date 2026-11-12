@@ -1,4 +1,5 @@
 const newBuilds = [];
+const modifiedBuilds = ["Volto-hache", "Build Volto-hache SAED"];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
 
@@ -12,6 +13,13 @@ weaponCards.forEach((card) => {
     newBadge.classList.add("new-badge");
 
     card.appendChild(newBadge);
+  } else if (modifiedBuilds.includes(weaponName)) {
+    const modifiedBadge = document.createElement("span");
+
+    modifiedBadge.textContent = "MODIFIÉ";
+    modifiedBadge.classList.add("modified-badge");
+
+    card.appendChild(modifiedBadge);
   }
 });
 
@@ -46,10 +54,10 @@ function openModal(event, weapon, element) {
 
   const clone = element.cloneNode(true);
 
-  const newBadge = clone.querySelector(".new-badge");
+  const badge = clone.querySelector(".new-badge, .modified-badge");
 
-  if (newBadge) {
-    newBadge.remove();
+  if (badge) {
+    badge.remove();
   }
 
   clone.classList.add("clone-card");
@@ -434,8 +442,8 @@ function openModal(event, weapon, element) {
               <img src="Images/Volto-SAED.png" alt="Build Volto-hache SAED">
             </a>
             <p>Voici le build SAED. Ce build vous permet d’atteindre le maximum d’élément possible, voire de le dépasser légèrement.</p>
-            <p>Pourquoi dépasser le maximum ? En réalité, il n’y a aucun intérêt à dépasser la limite d’élément en permanence, mais tous les talents ne sont pas actifs en même temps. Par exemple, si le monstre n’est pas énervé, vous ne bénéficierez pas du bonus d’élément obtenu via le bonus 4 pièces Gogmapocalypse. Dans ces situations, ce build vous permet de vous rapprocher du maximum lorsque Conversion élémentaire et Absorption élémentaire sont activés.</p>
-            <p>À l’inverse, si ces deux talents ne sont pas actifs lorsque le monstre est énervé, vous bénéficierez du bonus Gogmapocalypse, ce qui vous permettra d’atteindre le maximum d’élément. Et si tous les bonus sont actifs en même temps et que vous dépassez largement ce maximum, le talent Conversion élémentaire reste intéressant grâce à son effet de proc infligeant environ 300 dégâts occasionnels.</p>
+            <p>Pourquoi dépasser le maximum ? En réalité, il n’y a aucun intérêt à dépasser la limite d’élément en permanence, mais tous les talents ne sont pas actifs en même temps. Par exemple, si le monstre n’est pas énervé, vous ne bénéficierez pas du bonus d’élément obtenu via le bonus 4 pièces Gogmapocalypse. Dans ces situations, ce build vous permet de vous rapprocher du maximum lorsque Conversion élémentaire et Absorption élémentaire sont activés. Conversion élémentaire augmente uniquement l’élément dragon, et non les autres éléments.</p>
+            <p>À l’inverse, si ces deux talents ne sont pas actifs lorsque le monstre est énervé, vous pouvez bénéficier du bonus Gogmapocalypse, ce qui vous permettra d’atteindre le maximum d’élément. Et si tous les bonus sont actifs en même temps et que vous dépassez largement ce maximum, le talent Conversion élémentaire reste intéressant grâce à son effet de proc infligeant environ 300 dégâts occasionnels.</p>
             <p>Concernant le talisman, si vous souhaitez obtenir une immunité au fléau élémentaire, vous devrez impérativement y avoir deux niveaux de Totem élémentaire, car ce talent n’existe pas en joyaux.</p>
             <p>C'est un build qui fonctionne avec une arme élémentaire. Il est fortement conseillé d'avoir un maximum de bonus de renforcement en Boost élémentaire, soit jusqu'à 4 lignes au maximum.</p>
           </div>
@@ -474,6 +482,13 @@ function openModal(event, weapon, element) {
         newBadge.classList.add("new-badge");
 
         buildCard.appendChild(newBadge);
+      } else if (title && modifiedBuilds.includes(title.textContent.trim())) {
+        const modifiedBadge = document.createElement("span");
+
+        modifiedBadge.textContent = "MODIFIÉ";
+        modifiedBadge.classList.add("modified-badge");
+
+        buildCard.appendChild(modifiedBadge);
       }
     });
   }, 600);
