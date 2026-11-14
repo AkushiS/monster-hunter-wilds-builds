@@ -1,5 +1,5 @@
 const newBuilds = [];
-const modifiedBuilds = ["Volto-hache", "Build Volto-hache SAED"];
+const modifiedBuilds = [];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
 
