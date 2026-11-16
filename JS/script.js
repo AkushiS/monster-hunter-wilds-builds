@@ -204,7 +204,7 @@ function openModal(event, weapon, element) {
           </div>
 
           <div class="build-card">
-            <h3>Build Support</h3>
+            <h3>Build SnS Support</h3>
             <a href="Images/SnS-Support.png" target="_blank">
               <img src="Images/SnS-Support.png" alt="Build Support">
             </a>
