@@ -1,4 +1,4 @@
-const newBuilds = [];
+const newBuilds = ["Arc", "Build Arc Elementaire Crit"];
 const modifiedBuilds = [];
 
 const weaponCards = document.querySelectorAll(".weapon-card");
@@ -130,6 +130,18 @@ function openModal(event, weapon, element) {
             <p>Attention, un Build Arc avec de l'élément sera généralement supérieur en DPS (hors Arkveld).</p>
             <p>Sur le talisman, on peut y voir les talents Quatrième tir ainsi que Géologiste, mais ils sont inutiles. Vous pouvez donc potentiellement avoir d'autres talents plus utiles. Il y a également le talent Salve mortelle pour augmenter les dégâts de Mille dragons, Perce-Dragon ou Munitions traçantes. Mais si vous n'utilisez pas souvent ces attaques, vous pouvez opter pour d'autres talents, comme Maître d'arme, Machine de guerre, etc.</p>
             <p>C'est un build polyvalent qui fonctionne aussi bien avec une arme en élémentaire, en affliction qu'en attaque.</p>
+          </div>
+
+          <div class="build-card">
+            <h3>Build Arc Elementaire Crit</h3>
+            <a href="Images/Arc-ElemCrit.png" target="_blank">
+              <img src="Images/Arc-ElemCrit.png" alt="Build Élémentaire Crit">
+            </a>
+            <p>Ce build est meilleur que le "Build Arc Élémentaire No Crit", aussi bien en DPS qu'en survie. Cependant, il est plus exigeant concernant les bonus de set de l'arme Gogmazios, mais également au niveau du talisman si vous souhaitez conserver un confort similaire.</p>
+            <p>En ce qui concerne la survie, ce build peut bénéficier de talents similaires à ceux du "Build Arc Élémentaire No Crit", tout en profitant du bonus 2 pièces Arkveld, qui apporte une légère régénération de vie. Cela permet potentiellement de maintenir le talent Performance optimale actif plus longtemps. De plus, vous bénéficiez également du bonus « Âme du seigneur ».</p>
+            <p>Si vous souhaitez retrouver le même confort que le "Build Arc Élémentaire No Crit", il vous suffit de retirer les joyaux Métabolisme ainsi que 2 joyaux Parfait, afin de les remplacer par 4 joyaux Fenêtre d'invulnérabilité.</p>
+            <p>Concernant le talisman, si vous ne disposez pas des 2 emplacements de niveau 1, vous pouvez retirer les 2 niveaux de Métabolisme afin de compléter les talents Athlète et Bénédiction. Toutefois, le choix des talents de confort et de survie dépend avant tout de vos préférences personnelles.</p>
+            <p>C'est un build qui fonctionne avec une arme élémentaire. Pour profiter pleinement de ce build, il vous faudra avoir au minimum 2 bonus de renforcement avec Boost élémentaire.</p>
           </div>
         `;
         break;
