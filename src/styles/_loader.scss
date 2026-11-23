@@ -28,7 +28,7 @@
   &-text {
     display: flex;
     font-family: "Cinzel Decorative", serif;
-    font-size: 70px;
+    font-size: clamp(1.5rem, 5vw, 4.375rem);
 
     background: linear-gradient(
       to top,
@@ -45,7 +45,7 @@
 
     font-weight: bold;
     padding: 100px 30px;
-    gap: 15px;
+    gap: clamp(2px, 1vw, 15px);
     z-index: 1;
 
     span {
@@ -61,7 +61,7 @@
   }
 
   50% {
-    top: -100px;
+    top: clamp(-100px, -7vw, -35px);
   }
 
   100% {
