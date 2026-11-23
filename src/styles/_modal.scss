@@ -1,0 +1,92 @@
+.page-wilds {
+  .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 1500px;
+    height: calc(100vh - 280px);
+    margin-top: 230px;
+    overflow: visible;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  #builds-container {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    margin-right: -30px;
+    padding-right: 30px;
+
+    .build-card {
+      position: relative;
+
+      h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0 0 20px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 15px;
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff5555;
+    }
+  }
+
+  #modal-header {
+    position: absolute;
+    top: calc(-1 * (50vh - 50% + 30px));
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    .weapon-card {
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

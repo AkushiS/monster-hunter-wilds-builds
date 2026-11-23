@@ -1,0 +1,191 @@
+.page-wilds {
+  .guides-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .weapon-card {
+    position: relative;
+    height: clamp(180px, 22vw, 320px);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 0;
+    text-decoration: none;
+    color: white;
+
+    background-color: transparent;
+    background-size: auto min(65%, 180px);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    h3 {
+      width: 100%;
+      margin: 0;
+      padding: clamp(8px, 1.5vw, 20px);
+      font-size: clamp(0.75rem, 1.5vw, 1.6rem);
+
+      white-space: nowrap;
+      text-align: center;
+
+      font-family: "Times New Roman", serif;
+
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+    }
+  }
+
+  .Arc {
+    background-image: url("/Logo Arc.png");
+  }
+
+  .Corne-de-chasse {
+    background-image: url("/Logo Corne de chasse.png");
+  }
+
+  .Double-lames {
+    background-image: url("/Logo DB.png");
+  }
+
+  .Epee-et-bouclier {
+    background-image: url("/Logo SNS.png");
+  }
+
+  .Epee-longue {
+    background-image: url("/Logo LS.png");
+  }
+
+  .Grande-epee {
+    background-image: url("/Logo GS.png");
+  }
+
+  .Lance {
+    background-image: url("/Logo Lance.png");
+  }
+
+  .Lance-canon {
+    background-image: url("/Logo Lance Canon.png");
+  }
+
+  .Fusarbalete-leger {
+    background-image: url("/Logo LBG.png");
+  }
+
+  .Fusarbalete-lourd {
+    background-image: url("/Logo HBG.png");
+  }
+
+  .Insectoglaive {
+    background-image: url("/Logo IG.png");
+  }
+
+  .Marteau {
+    background-image: url("/Logo Marteau.png");
+  }
+
+  .Morpho-hache {
+    background-image: url("/Logo Morpho.png");
+  }
+
+  .Volto-hache {
+    background-image: url("/Logo Volto.png");
+  }
+
+  .new-badge,
+  .modified-badge {
+    position: absolute;
+    top: 15px;
+    left: -20px;
+
+    padding: 5px 25px;
+
+    color: white;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    transform: rotate(-45deg);
+    z-index: 10;
+
+    animation: new-blink 1.2s ease-in-out infinite;
+  }
+
+  .new-badge {
+    background-color: red;
+  }
+
+  .modified-badge {
+    background-color: #168bff;
+    padding: 5px 12px;
+    left: auto;
+    right: -10px;
+    top: 19px;
+    transform: rotate(45deg);
+  }
+
+  .animated-card,
+  #modal-header .weapon-card {
+    box-sizing: border-box;
+    margin: 0;
+    cursor: default;
+    pointer-events: none;
+
+    &:hover {
+      transform: none;
+      cursor: default;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+
+@keyframes new-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-wilds {
+    .guides-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .weapon-card {
+      height: clamp(150px, 45vw, 220px);
+
+      background-size: 70%;
+
+      h3 {
+        font-size: clamp(0.75rem, 3vw, 1rem);
+        padding: 10px 5px;
+      }
+    }
+  }
+}

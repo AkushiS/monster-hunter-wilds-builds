@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+
+body {
+  margin: 0;
+}
+
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &.page-home {
+    background-image: url("/Accueil_fond1.webp");
+  }
+
+  &.page-wilds {
+    background-image: url("/MHW Decor.png");
+  }
+
+  &.page-ascendance {
+    background-image: url("/Ascendance_fond.png");
+  }
+}

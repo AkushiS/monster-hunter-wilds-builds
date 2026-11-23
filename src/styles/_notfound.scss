@@ -1,0 +1,58 @@
+body:has(.page-404) {
+  background-image: url("/Error_404_final.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-404 {
+  .error-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 45px;
+
+    background: rgba(20, 24, 28, 0.75);
+    border: 1px solid rgba(229, 187, 120, 0.4);
+    border-radius: 15px;
+
+    h1 {
+      font-size: 48px;
+      color: #e5bb78;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #e5bb78;
+      margin: 0 0 15px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #d2d0ca;
+      margin-bottom: 25px;
+    }
+
+    .return-home {
+      display: inline-block;
+      padding: 12px 20px;
+      color: #e5bb78;
+      text-decoration: none;
+      font-weight: bold;
+
+      border: 1px solid #a88959;
+      border-radius: 8px;
+
+      transition: 0.3s;
+
+      &:hover {
+        background: #e5bb78;
+        color: #191d20;
+      }
+    }
+  }
+}

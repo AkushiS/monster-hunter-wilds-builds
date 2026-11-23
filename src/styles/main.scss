@@ -1,0 +1,15 @@
+@use "loader";
+@use "header";
+@use "footer";
+@use "global";
+@use "home";
+@use "carousel";
+@use "wilds";
+@use "weapons";
+@use "modal";
+@use "ascendance";
+@use "notfound";
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,54 @@
+.ascendance-h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: clamp(2rem, 5vw, 5rem);
+  text-align: center;
+
+  background: linear-gradient(
+    90deg,
+    rgba(93, 115, 238, 1) 0%,
+    rgba(127, 115, 178, 1) 40%,
+    rgba(255, 65, 81, 1) 80%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-text-stroke: 1px #ffffff;
+
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.9))
+    drop-shadow(0 8px 15px rgba(0, 0, 0, 0.8));
+}
+
+.armure {
+  font-size: clamp(1.5rem, 4vw, 3.75rem);
+  font-weight: bold;
+  text-align: center;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  // Relief 3D
+  text-shadow:
+    1px 1px 0 #777,
+    2px 2px 0 #666,
+    3px 3px 0 #555,
+    0 0 8px rgba(255, 255, 255, 0.6),
+    5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ascend {
+  display: block;
+
+  width: clamp(280px, 80vw, 1200px);
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+
+  margin: 40px auto;
+
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+  border: none;
+}

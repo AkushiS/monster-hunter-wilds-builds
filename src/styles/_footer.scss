@@ -1,0 +1,26 @@
+.site-footer {
+  margin-top: auto;
+  padding: 25px;
+  box-sizing: border-box;
+
+  text-align: center;
+  color: #e6e6e6;
+
+  // Effet verre
+  background: rgba(20, 20, 20, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-family: Arial, sans-serif;
+
+  p {
+    margin: 5px 0;
+  }
+
+  .small {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
