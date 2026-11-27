@@ -13,9 +13,16 @@ function Home() {
       <div className="presentation">
         <img
           src={`${import.meta.env.BASE_URL}Parchemin_presentation.png`}
-          alt="Retrouvez des builds dédiés aux chasseurs souhaitant optimiser leur équipement. Ces builds sont pensés pour le contenu endgame, avec un équilibre entre dégâts, confort et survie."
+          alt=""
           className="parchemin"
         />
+        <p className="parchemin-text">
+          Retrouvez des builds dédiés aux chasseurs souhaitant optimiser leur
+          équipement. Ces builds sont pensés pour le contenu endgame, avec un
+          équilibre entre dégâts, confort
+          <br />
+          et survie.
+        </p>
       </div>
 
       <section className="last" aria-label="Dernières nouveautés">

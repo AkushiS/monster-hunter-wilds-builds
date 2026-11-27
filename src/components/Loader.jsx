@@ -4,7 +4,7 @@ function Loader() {
   return (
     <div className="loader">
       <img
-        src={`${import.meta.env.BASE_URL}double_griffe.png`}
+        src={`${import.meta.env.BASE_URL}double_griffe.webp`}
         alt=""
         className="loader-griffes"
       />

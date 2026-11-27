@@ -4,7 +4,7 @@ export const weaponsBuilds = {
   Arc: [
     {
       title: "Build Arc Elementaire No Crit",
-      image: `${BASE_URL}Arc-ElemNoCrit.png`,
+      image: `${BASE_URL}Arc-ElemNoCrit.webp`,
       alt: "Build Arc Élémentaire No Crit",
       description: [
         "Voici un build Arc qui peut évoluer selon vos préférences. Hormis face à l’Arkveld, il n’est pas inférieur au build critique en termes de dégâts. Étant un build basé sur l’élément, il faut noter que l’Arkveld est un monstre possédant peu de faiblesses élémentaires, voire une immunité sur ses ailes. De plus, il peut infliger le Fléau-dragons, ce qui empêche d’infliger des dégâts élémentaires.",
@@ -15,7 +15,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Arc Raw/Crit",
-      image: `${BASE_URL}Arc-Raw.png`,
+      image: `${BASE_URL}Arc-Raw.webp`,
       alt: "Build Arc Raw/Crit",
       description: [
         "Un build Arc basé sur l'attaque et l'affinité. Si vous ne voulez pas devoir monter plusieurs Arcs de chaque élément, ou pour affronter l'Arkveld normal ou Alpha.",
@@ -26,7 +26,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Arc Elementaire Crit",
-      image: `${BASE_URL}Arc-ElemCrit.png`,
+      image: `${BASE_URL}Arc-ElemCrit.webp`,
       alt: "Build Arc Élémentaire Crit",
       description: [
         "Ce build est meilleur que le \"Build Arc Élémentaire No Crit\", aussi bien en DPS qu'en survie. Cependant, il est plus exigeant concernant les bonus de set de l'arme Gogmazios, mais également au niveau du talisman si vous souhaitez conserver un confort similaire.",
@@ -41,7 +41,7 @@ export const weaponsBuilds = {
   "Corne de chasse": [
     {
       title: "Build Corne de chasse DPS",
-      image: `${BASE_URL}HH-DPS.png`,
+      image: `${BASE_URL}HH-DPS.webp`,
       alt: "Build Corne de chasse DPS",
       description: [
         "Un build Corne de chasse DPS. Et oui, même si la Corne de chasse permet de booster et d’apporter différents types de soutien à l’équipe, c’est également une arme extrêmement forte en DPS, mais sans doute l’une des plus complexes à maîtriser.",
@@ -52,7 +52,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Corne de chasse Perma Boost",
-      image: `${BASE_URL}HH-Perma-Boost.png`,
+      image: `${BASE_URL}HH-Perma-Boost.webp`,
       alt: "Build Corne de chasse Perma Boost",
       description: [
         "Ce build est basé sur l'arme de l'Arkveld « Galahad le Tonitruant », qui est la seule corne de chasse avec la mélodie : Extension des mélodies. C'est cette mélodie qui vous permet de garder les boosts de vos deux cornes de chasse actifs durant le combat.",
@@ -68,7 +68,7 @@ export const weaponsBuilds = {
   "Double lames": [
     {
       title: "Build Double Lames Elementaire No Crit",
-      image: `${BASE_URL}DB-ElemNoCrit.png`,
+      image: `${BASE_URL}DB-ElemNoCrit.webp`,
       alt: "Build Double Lames Elementaire No Crit",
       description: [
         "Voici un build Double Lames qui peut évoluer selon vos préférences. Hormis face à l’Arkveld classique, il n’est pas inférieur au build critique en termes de dégâts. En effet, les chaînes de l’Arkveld classique sont immunisées aux dégâts élémentaires, ce qui réduit fortement l’efficacité des builds élémentaires.",
@@ -80,7 +80,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Double Lames Raw/Crit",
-      image: `${BASE_URL}DB-Raw.png`,
+      image: `${BASE_URL}DB-Raw.webp`,
       alt: "Build Double Lames Raw/Crit",
       description: [
         "Un build Double Lames basé sur l'attaque et l'affinité. Si vous ne voulez pas devoir monter plusieurs Double Lames de chaque élément, ou pour affronter l'Arkveld normal ou Alpha.",
@@ -91,7 +91,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Double lames Elementaire Crit",
-      image: `${BASE_URL}DB-ElemCrit.png`,
+      image: `${BASE_URL}DB-ElemCrit.webp`,
       alt: "Build Double lames Élémentaire Crit",
 
       description: [
@@ -111,7 +111,7 @@ export const weaponsBuilds = {
   "Épée & bouclier": [
     {
       title: "Build SnS DPS",
-      image: `${BASE_URL}SnS-DPS.png`,
+      image: `${BASE_URL}SnS-DPS.webp`,
       alt: "Build SnS DPS",
       description: [
         "Ce build offre un excellent équilibre entre dégâts, confort et survie. On peut notamment remarquer la présence de joyaux de niveau 1 placés dans des emplacements de niveau 2. Il serait possible de compléter Performance optimale jusqu'au niveau 5, mais le gain apporté ne me paraît pas suffisamment intéressant.",
@@ -123,7 +123,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build SnS Support",
-      image: `${BASE_URL}SnS-Support.png`,
+      image: `${BASE_URL}SnS-Support.webp`,
       alt: "Build SnS Support",
       description: [
         "Voici un build de soutien. Il vous permettra de soigner rapidement et fréquemment vos alliés, tout en leur conférant des bonus d'attaque grâce aux Potions de démon, aux Poudres de démon, etc., ainsi qu'au bonus de groupe « Faveur du seigneur ». Ce dernier accorde 10 points d'attaque supplémentaires à toute l'équipe après l'utilisation d'un soin ou d'un objet de renforcement.",
@@ -134,7 +134,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build SnS Elementaire Crit DPS",
-      image: `${BASE_URL}SnS-ElemCrit.png`,
+      image: `${BASE_URL}SnS-ElemCrit.webp`,
       alt: "Build SnS Elementaire Crit",
       description: [
         'Tout comme le "Build SnS DPS", ce build offre un excellent équilibre entre dégâts, confort et survie. Il est même supérieur en matière de survie, mais propose légèrement moins de confort.',
@@ -151,7 +151,7 @@ export const weaponsBuilds = {
   "Épée longue": [
     {
       title: "Build LS Multi-Monstres",
-      image: `${BASE_URL}Multi-Monstres.png`,
+      image: `${BASE_URL}Multi-Monstres.webp`,
       alt: "Build LS Multi-Monstres",
       description: [
         "Ceci est un build qui fonctionne sur tous les monstres. Si Mise à mort n'est pas rentable sur certains monstres (ex. : phases 1 et 2 du Gogmazios ou le Gore Magala si vous ne tapez pas sa tête), vous pouvez alors mettre Force latente lv 5 ou Témérité lv 5 + Poussée d'adrénaline lv 1, car les 5 niveaux de Mise à mort sont obtenus via des joyaux.",
@@ -163,7 +163,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build LS Raw/Elem",
-      image: `${BASE_URL}LS-Raw-Elem.png`,
+      image: `${BASE_URL}LS-Raw-Elem.webp`,
       alt: "Builds LS Raw/Elem",
       description: [
         "Voici un build meilleur que le précédent en termes de DPS et de survie. Ce qu’il a de plus que le précédent, c’est la possibilité d’avoir le bouclier du 4p Gogmapocalypse ainsi qu’une petite régénération de vie via le 2p Appétit de l’Arkveld. Ces bonus de set vous permettent donc d’avoir très souvent le talent Performance optimale activé.",
@@ -176,7 +176,7 @@ export const weaponsBuilds = {
   "Grande épée": [
     {
       title: "Build GS Triple Impact",
-      image: `${BASE_URL}Triple-Impact.png`,
+      image: `${BASE_URL}Triple-Impact.webp`,
       alt: "Build GS Triple Impact",
       description: [
         "Ce build permet d’infliger d’importants dégâts grâce à une attaque et une affinité élevées, ainsi qu’au passif de l’arme « Reflet éparpillé » et au bonus 2 pièces Maléfique. L’arme offre déjà un excellent confort de jeu grâce au talent Concentration intégré et à son très bon tranchant, ce qui permet de se passer de talents comme Samouraï ou Main de maître.",
@@ -187,7 +187,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build GS DPS Confort",
-      image: `${BASE_URL}GS-DPS-Confort.png`,
+      image: `${BASE_URL}GS-DPS-Confort.webp`,
       alt: "Build GS DPS Confort",
       description: [
         "Voici un build GS moins puissant que le précédent, mais qui vous offre un meilleur confort. Vous pouvez obtenir Crâne d'acier niveau 3 et Bouchon d'oreille niveau 2, ainsi que le bonus 2p « Volonté de l'Anjanath tonnerre », qui vous permet de mieux profiter du talent Corps et âme.",
@@ -201,7 +201,7 @@ export const weaponsBuilds = {
   Lance: [
     {
       title: "Build Lance DPS",
-      image: `${BASE_URL}Lance-DPS.png`,
+      image: `${BASE_URL}Lance-DPS.webp`,
       alt: "Build Lance DPS",
       description: [
         "Ce build Lance vous permet d’allier de bons dégâts tout en conservant un excellent confort et une bonne survie. Grâce aux bonus 2 pièces Arkvulcan, vous bénéficiez d’une légère régénération de vie lors de vos attaques, sans oublier le bonus de groupe « Âme du seigneur », qui peut vous permettre de survivre à 1 point de vie, ainsi que Bénédiction niveau 3.",
@@ -213,7 +213,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Lance Auto-Régén",
-      image: `${BASE_URL}Lance-Auto-Regen.png`,
+      image: `${BASE_URL}Lance-Auto-Regen.webp`,
       alt: "Build Lance Auto-Régén",
       description: [
         "C'est un build conçu pour être autosuffisant. Grâce aux bonus 2p « Appétit de l'Arkveld » et 4p « Pouls du Zoh Shia », vous bénéficiez d'une légère régénération de vie lors de vos attaques, ainsi que d'une régénération passive continue. De plus, grâce au talent Cercle de vie, les effets de vos bonus et objets de régénération sont amplifiés. Le talent Halo de guérison vous permet également de récupérer beaucoup plus rapidement les PV temporairement perdus (la jauge rouge de la barre de vie).",
@@ -223,7 +223,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Lance Elementaire Crit",
-      image: `${BASE_URL}Lance-ElemCrit.png`,
+      image: `${BASE_URL}Lance-ElemCrit.webp`,
       alt: "Build Lance Elementaire Crit",
       description: [
         'Ce build Lance est meilleur que le "Build Lance DPS", notamment grâce à une meilleure survie, mais il propose des talents de confort légèrement différents.',
@@ -242,7 +242,7 @@ export const weaponsBuilds = {
   "Lance canon": [
     {
       title: "Build Lance canon DPS",
-      image: `${BASE_URL}LanceCanon-DPS.png`,
+      image: `${BASE_URL}LanceCanon-DPS.webp`,
       alt: "Build Lance canon DPS",
       description: [
         "Voici un build Lance canon DPS. Étant une arme lente lors des déplacements, tout comme dans le build Lance DPS, j’ai opté pour 2 niveaux de Trompe-la-mort afin d’améliorer la mobilité lorsque vous êtes dégainé.",
@@ -255,7 +255,7 @@ export const weaponsBuilds = {
   "Fusarbalète léger": [
     {
       title: "Build LBG DPS Elementaire",
-      image: `${BASE_URL}LBG-ElemCrit.png`,
+      image: `${BASE_URL}LBG-ElemCrit.webp`,
       alt: "Build LBG DPS Elementaire",
       description: [
         "Ce build LBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.",
@@ -267,7 +267,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build LBG Mun Normal",
-      image: `${BASE_URL}LBG-Mun-Normal.png`,
+      image: `${BASE_URL}LBG-Mun-Normal.webp`,
       alt: "Build LBG Mun Normal",
       description: [
         "Ce build est complet, vous n’avez rien à faire pour activer vos talents, mis à part manger un steak pour activer le bonus 2p du Xu Wu, qui vous apportera +15 d’attaque pendant 3 minutes.",
@@ -280,7 +280,7 @@ export const weaponsBuilds = {
   "Fusarbalète lourd": [
     {
       title: "Build HBG DPS Elementaire",
-      image: `${BASE_URL}HBG-ElemCrit.png`,
+      image: `${BASE_URL}HBG-ElemCrit.webp`,
       alt: "Build HBG DPS Elementaire",
       description: [
         "Ce build HBG vous apporte d’importants dégâts élémentaires grâce aux talents Vendetta et Union. Tout comme le talent Antivirus, le talent Union s’active facilement grâce au bonus 2 pièces Tyrannie du Gore Magala.",
@@ -292,7 +292,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build HBG Mortier",
-      image: `${BASE_URL}HBG-Mortier.png`,
+      image: `${BASE_URL}HBG-Mortier.webp`,
       alt: "Build HBG Mortier",
       description: [
         "Ce build HBG est principalement conçu pour être joué avec « Combustion Souffle-du-dragon », une attaque qui ne peut pas infliger de coups critiques et dont les dégâts dépendent uniquement de votre attaque. Le bonus Xu Wu vous permet donc de bénéficier de +30 en attaque pendant 3 minutes après avoir mangé un steak.",
@@ -306,7 +306,7 @@ export const weaponsBuilds = {
   Insectoglaive: [
     {
       title: "Build Insectoglaive DPS",
-      image: `${BASE_URL}IG-DPS.png`,
+      image: `${BASE_URL}IG-DPS.webp`,
       alt: "Build Insectoglaive DPS",
       description: [
         "Voici un build Insectoglaive DPS. Ce build vous apporte d’importants dégâts tout en conservant un bon niveau de confort.",
@@ -317,7 +317,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Insectoglaive Elementaire Crit",
-      image: `${BASE_URL}IG-ElemCrit.png`,
+      image: `${BASE_URL}IG-ElemCrit.webp`,
       alt: "Build Insectoglaive Elementaire Crit",
 
       description: [
@@ -337,7 +337,7 @@ export const weaponsBuilds = {
   Marteau: [
     {
       title: "Build Marteau Multi Proc",
-      image: `${BASE_URL}Marteau-Multi-Proc.png`,
+      image: `${BASE_URL}Marteau-Multi-Proc.webp`,
       alt: "Build Marteau Multi Proc",
       description: [
         "Ce build Marteau est très complet : vous n’aurez pas besoin de changer vos talents selon le monstre affronté.",
@@ -349,7 +349,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Marteau DPS",
-      image: `${BASE_URL}Marteau-DPS.png`,
+      image: `${BASE_URL}Marteau-DPS.webp`,
       alt: "Build Marteau DPS",
       description: [
         "Ce build est tout aussi efficace que le précédent. Il aura plus de dégâts sur vos attaques, mais ne bénéficie ni de Conversion élémentaire ni d’Écorcheur. Vous n’avez pas non plus le talent Totem élémentaire, mais vous avez la possibilité d’avoir 3 emplacements de joyaux de niveau 1 supplémentaires. Vous pourrez donc mettre des talents comme Crâne d’acier, Carnassier, etc.",
@@ -362,7 +362,7 @@ export const weaponsBuilds = {
   "Morpho-hache": [
     {
       title: "Build Morpho-hache Full Crit",
-      image: `${BASE_URL}Morpho-Crit.png`,
+      image: `${BASE_URL}Morpho-Crit.webp`,
       alt: "Build Morpho-hache Full Crit",
       description: [
         "Un build Morpho-hache qui fonctionne aussi bien avec une Morpho-hache à fiole élémentaire qu’avec une fiole de choc. Il s’agit d’un build combinant une forte attaque, un bon apport élémentaire et une affinité pouvant atteindre les 100 %.",
@@ -372,7 +372,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Morpho-hache Raw/Elem",
-      image: `${BASE_URL}Morpho-Raw-Elem.png`,
+      image: `${BASE_URL}Morpho-Raw-Elem.webp`,
       alt: "Build Morpho-hache Raw/Elem",
       description: [
         "Voici un build meilleur que le précédent en termes de DPS et de survie, mais il est préférable d'utiliser les fioles élémentaires. Ce qu’il a de plus que le précédent, c’est la possibilité d’avoir le bouclier du 4p Gogmapocalypse ainsi qu’une petite régénération de vie via le 2p Appétit de l’Arkveld. Ces bonus de set vous permettent donc d’avoir très souvent le talent Performance optimale activé.",
@@ -385,7 +385,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Morpho-hache Choc",
-      image: `${BASE_URL}Morpho-Choc.png`,
+      image: `${BASE_URL}Morpho-Choc.webp`,
       alt: "Build Morpho-hache Choc",
       description: [
         "Ce build Morpho-hache est fait pour être joué en fiole de choc. Si vous ne voulez pas devoir monter plusieurs Morpho-haches de chaque élément, alors il est fait pour vous.",
@@ -398,7 +398,7 @@ export const weaponsBuilds = {
   "Volto-hache": [
     {
       title: "Build Volto-hache SAED",
-      image: `${BASE_URL}Volto-SAED.png`,
+      image: `${BASE_URL}Volto-SAED.webp`,
       alt: "Build Volto-hache SAED",
       description: [
         "Voici le build SAED. Ce build vous permet d’atteindre le maximum d’élément possible, voire de le dépasser légèrement.",
@@ -410,7 +410,7 @@ export const weaponsBuilds = {
     },
     {
       title: "Build Volto-hache Choc",
-      image: `${BASE_URL}Volto-Choc.png`,
+      image: `${BASE_URL}Volto-Choc.webp`,
       alt: "Build Volto-hache Choc",
       description: [
         "Ce build Volto-hache est fait pour être joué en fiole de choc. Si vous ne voulez pas devoir monter plusieurs Volto-haches de chaque élément, alors il est fait pour vous.",

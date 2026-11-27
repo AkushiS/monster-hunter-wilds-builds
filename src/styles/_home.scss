@@ -20,19 +20,44 @@
   }
 
   .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
+    width: 900px;
+    max-width: 90%;
     margin: 40px auto;
+
+    container-type: inline-size;
 
     .parchemin {
       display: block;
-      width: 900px;
-      max-width: 90%;
+      width: 100%;
       height: auto;
 
       filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7));
+    }
+
+    .parchemin-text {
+      position: absolute;
+      top: 49%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 67%;
+      margin: 0;
+
+      text-align: center;
+      font-family: "IM Fell English", serif;
+      font-style: italic;
+      font-size: 5.2cqw;
+      font-weight: 400;
+      line-height: 1.18;
+
+      color: #542b0d;
+
+      mix-blend-mode: multiply;
+
+      -webkit-text-stroke: 0.3px #542b0d;
     }
   }
 

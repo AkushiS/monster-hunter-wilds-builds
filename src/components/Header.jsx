@@ -58,9 +58,16 @@ function Header() {
               className="ascendance-title"
               onClick={closeMenu}
             >
-              <span className="ascendance-line">Monster Hunter Wilds :</span>
+              <span
+                className="ascendance-line"
+                data-text="Monster Hunter Wilds :"
+              >
+                Monster Hunter Wilds :
+              </span>
               <br />
-              <span className="ascendance-line">Ascendance</span>
+              <span className="ascendance-line" data-text="Ascendance">
+                Ascendance
+              </span>
             </NavLink>
           </li>
         )}

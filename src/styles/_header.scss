@@ -14,7 +14,7 @@ nav {
   align-items: center;
 
   background-color: transparent;
-  background-image: url("/Epee2_1Bis.png");
+  background-image: url("/Epee2_1Bis.webp");
   background-repeat: no-repeat;
   background-size: 1870px auto;
   background-position: calc(50% - 170px) calc(50% + 5px);
@@ -138,36 +138,42 @@ nav {
       .ascendance-line {
         position: relative;
         display: inline-block;
-        z-index: 1;
+        isolation: isolate;
 
-        &::before {
-          content: "";
-
-          position: absolute;
-          inset: 15px 0;
-
-          z-index: -1;
-
-          background: linear-gradient(
-            90deg,
-            rgba(93, 115, 238, 1),
-            rgba(127, 115, 178, 1),
-            rgba(255, 65, 81, 1)
-          );
-
-          filter: blur(9px);
-          opacity: 0;
-          pointer-events: none;
-        }
-      }
-
-      .ascendance-title:hover .ascendance-line {
-        background: linear-gradient(
+        --ascendance-gradient: linear-gradient(
           90deg,
           rgba(93, 115, 238, 1) 0%,
           rgba(127, 115, 178, 1) 20%,
           rgba(255, 65, 81, 1) 80%
         );
+
+        &::before {
+          content: attr(data-text);
+
+          position: absolute;
+          inset: 0;
+
+          z-index: -1;
+
+          background: var(--ascendance-gradient);
+
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1.5px transparent;
+
+          text-shadow: none;
+
+          filter: brightness(1.8) saturate(1.5) blur(2px);
+
+          opacity: 0;
+
+          pointer-events: none;
+        }
+      }
+
+      .ascendance-title:hover .ascendance-line {
+        background: var(--ascendance-gradient);
 
         background-clip: text;
         -webkit-background-clip: text;
