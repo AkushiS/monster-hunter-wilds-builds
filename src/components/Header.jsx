@@ -44,7 +44,7 @@ function Header() {
 
         {pathname !== "/wilds" && (
           <li>
-            <NavLink to="/wilds" className="wilds-title" onClick={closeMenu}>
+            <NavLink to="/wilds/" className="wilds-title" onClick={closeMenu}>
               Monster Hunter
               <br />
               Wilds
@@ -55,7 +55,7 @@ function Header() {
         {pathname !== "/ascendance" && (
           <li>
             <NavLink
-              to="/ascendance"
+              to="/ascendance/"
               className="ascendance-title"
               onClick={closeMenu}
             >
