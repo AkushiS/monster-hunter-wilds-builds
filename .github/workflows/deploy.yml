@@ -33,6 +33,14 @@ jobs:
       - name: Compiler le site
         run: npm run build
 
+      - name: Generer les routes React
+        run: |
+          mkdir -p dist/wilds
+          mkdir -p dist/ascendance
+          cp dist/index.html dist/wilds/index.html
+          cp dist/index.html dist/ascendance/index.html
+          cp dist/index.html dist/404.html
+
       - name: Preparer GitHub Pages
         uses: actions/configure-pages@v5
 

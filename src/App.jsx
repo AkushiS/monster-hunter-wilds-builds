@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from "react-router";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 
 import Loader from "./components/Loader";
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ function SiteLayout() {
 
   let pageClass;
 
-  switch (location.pathname) {
+  switch (location.pathname.replace(/\/+$/, "") || "/") {
     case "/":
       pageClass = "page-home";
       break;
@@ -50,9 +50,9 @@ function SiteLayout() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <SiteLayout />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

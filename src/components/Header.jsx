@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router";
 
 function Header() {
   const location = useLocation();
+  const pathname = location.pathname.replace(/\/+$/, "") || "/";
   const [menuOpen, setMenuOpen] = useState(false);
 
   function closeMenu() {
@@ -33,7 +34,7 @@ function Header() {
       </button>
 
       <ul id="navigation-links" className={menuOpen ? "menu-open" : ""}>
-        {location.pathname !== "/" && (
+        {pathname !== "/" && (
           <li>
             <NavLink to="/" className="accueil-title" onClick={closeMenu}>
               Accueil
@@ -41,7 +42,7 @@ function Header() {
           </li>
         )}
 
-        {location.pathname !== "/wilds" && (
+        {pathname !== "/wilds" && (
           <li>
             <NavLink to="/wilds" className="wilds-title" onClick={closeMenu}>
               Monster Hunter
@@ -51,7 +52,7 @@ function Header() {
           </li>
         )}
 
-        {location.pathname !== "/ascendance" && (
+        {pathname !== "/ascendance" && (
           <li>
             <NavLink
               to="/ascendance"
