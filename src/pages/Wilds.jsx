@@ -79,6 +79,18 @@ function Wilds() {
 
   return (
     <>
+      <title>Monster Hunter Wilds Builds – Endgame</title>
+
+      <meta
+        name="description"
+        content="Retrouvez les builds endgame RC 100 pour toutes les armes de Monster Hunter Wilds. Optimisez vos dégâts, votre confort et votre survie."
+      />
+
+      <link
+        rel="canonical"
+        href="https://akushis.github.io/monster-hunter-wilds-builds/wilds/"
+      />
+
       <header>
         <h1 className="wilds-h1">Monster Hunter Wilds</h1>
       </header>

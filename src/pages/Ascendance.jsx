@@ -1,6 +1,18 @@
 function Ascendance() {
   return (
     <>
+      <title>Monster Hunter Wilds : Ascendance Builds – Endgame</title>
+
+      <meta
+        name="description"
+        content="Découvrez le trailer de Monster Hunter Wilds : Ascendance et retrouvez les futurs builds endgame de l'extension."
+      />
+
+      <link
+        rel="canonical"
+        href="https://akushis.github.io/monster-hunter-wilds-builds/ascendance/"
+      />
+
       <header>
         <h1 className="ascendance-h1">
           Monster&nbsp;Hunter Wilds&nbsp;:

@@ -3,6 +3,18 @@ import Carousel from "../components/Carousel";
 function Home() {
   return (
     <main className="home">
+      <title>Monster Hunter Wilds Builds – Accueil</title>
+
+      <meta
+        name="description"
+        content="Découvrez les builds de Monster Hunter Wilds et Ascendance, les dernières nouveautés du jeu et les équipements optimisés pour vos armes."
+      />
+
+      <link
+        rel="canonical"
+        href="https://akushis.github.io/monster-hunter-wilds-builds/"
+      />
+
       <div className="titre-fond">
         <h1>
           <span className="accueil-h1">Bienvenue </span>
