@@ -12,7 +12,7 @@ function Home() {
 
       <div className="presentation">
         <img
-          src={`${import.meta.env.BASE_URL}Parchemin_presentation.png`}
+          src={`${import.meta.env.BASE_URL}Parchemin_presentation.avif`}
           alt=""
           className="parchemin"
         />
@@ -27,7 +27,7 @@ function Home() {
 
       <section className="last" aria-label="Dernières nouveautés">
         <img
-          src={`${import.meta.env.BASE_URL}Planche_nouveautés.png`}
+          src={`${import.meta.env.BASE_URL}Planche_nouveautés.avif`}
           alt=""
           className="planche-nouveautes"
         />
