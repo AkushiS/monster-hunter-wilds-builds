@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const videos = [
   "EWvjrwfYztQ",
@@ -24,42 +24,23 @@ function Carousel() {
 
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const previousIndex = useRef(currentIndex);
+  const [loadedVideo, setLoadedVideo] = useState(null);
 
   const nextVideo = () => {
+    setLoadedVideo(null);
+    setIsPlaying(false);
+
     setCurrentIndex((previousIndex) => (previousIndex + 1) % videos.length);
   };
 
   const prevVideo = () => {
+    setLoadedVideo(null);
+    setIsPlaying(false);
+
     setCurrentIndex(
       (previousIndex) => (previousIndex - 1 + videos.length) % videos.length,
     );
   };
-
-  useEffect(() => {
-    if (previousIndex.current !== currentIndex) {
-      const previousVideo = videos[previousIndex.current];
-
-      const iframe = document.querySelector(
-        `iframe[data-video-id="${previousVideo}"]`,
-      );
-
-      if (iframe?.contentWindow) {
-        iframe.contentWindow.postMessage(
-          JSON.stringify({
-            event: "command",
-            func: "pauseVideo",
-            args: [],
-          }),
-          "https://www.youtube.com",
-        );
-      }
-
-      setIsPlaying(false);
-
-      previousIndex.current = currentIndex;
-    }
-  }, [currentIndex]);
 
   useEffect(() => {
     if (isPlaying) {
@@ -67,13 +48,15 @@ function Carousel() {
     }
 
     const autoSlide = setInterval(() => {
+      setLoadedVideo(null);
+
       setCurrentIndex((previousIndex) => (previousIndex + 1) % videos.length);
     }, 5000);
 
     return () => {
       clearInterval(autoSlide);
     };
-  }, [isPlaying]);
+  }, [isPlaying, currentIndex]);
 
   useEffect(() => {
     const handleYouTubeMessage = (event) => {
@@ -157,7 +140,7 @@ function Carousel() {
         iframe.removeEventListener("load", handleLoad);
       });
     };
-  }, []);
+  }, [loadedVideo]);
 
   return (
     <div className="video-carousel">
@@ -199,21 +182,47 @@ function Carousel() {
                         : "hidden-right"
               }`}
             >
-              <iframe
-                data-video-id={video}
-                src={`https://www.youtube.com/embed/${video}?enablejsapi=1&origin=${encodeURIComponent(window.location.origin)}`}
-                title={`Vidéo Monster Hunter Wilds ${index + 1}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
+              {loadedVideo === video && position === 0 ? (
+                <iframe
+                  data-video-id={video}
+                  src={`https://www.youtube.com/embed/${video}?autoplay=1&enablejsapi=1&origin=${encodeURIComponent(window.location.origin)}`}
+                  title={`Vidéo Monster Hunter Wilds ${index + 1}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              ) : (
+                <button
+                  type="button"
+                  className="video-thumbnail"
+                  tabIndex={position === 0 ? 0 : -1}
+                  aria-label={`Lire la vidéo ${index + 1}`}
+                  onClick={() => {
+                    if (position === 0) {
+                      setLoadedVideo(video);
+                      setIsPlaying(true);
+                    }
+                  }}
+                >
+                  <img
+                    src={`https://i.ytimg.com/vi/${video}/hqdefault.jpg`}
+                    alt={`Vidéo Monster Hunter Wilds ${index + 1}`}
+                  />
+
+                  <span className="video-play"></span>
+                </button>
+              )}
 
               {position !== 0 && Math.abs(position) === 1 && (
                 <button
                   type="button"
                   className="video-overlay"
                   aria-label={`Sélectionner la vidéo ${index + 1}`}
-                  onClick={() => setCurrentIndex(index)}
+                  onClick={() => {
+                    setLoadedVideo(null);
+                    setIsPlaying(false);
+                    setCurrentIndex(index);
+                  }}
                 />
               )}
             </div>
